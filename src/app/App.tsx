@@ -1,7 +1,7 @@
 import { useTheme } from "app/providers/theme";
 import { classNames } from "shared/lib/classNames/classNames";
 import { AppRouter } from "./providers/router";
-import { Navbar } from "widgets/navbar/ui/Navbar";
+import { Navbar } from "widgets/navbar";
 import "./styles/index.scss";
 
 export const App = () => {
