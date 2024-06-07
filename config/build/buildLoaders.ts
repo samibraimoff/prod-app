@@ -6,6 +6,17 @@ import { BuildOptions } from "./types";
 export const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
     const { isDev } = options;
 
+    const babelLoader = {
+        test: /.(js|jsx|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+            loader: "babel-loader",
+            options: {
+                presets: ["@babel/preset-env"]
+            }
+        }
+    }
+
     const svgrLoader = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
@@ -45,6 +56,7 @@ export const buildLoaders = (options: BuildOptions): webpack.RuleSetRule[] => {
         ],
     }
     return [
+        babelLoader,
         typescriptLoader,
         cssLoader,
         svgrLoader,
