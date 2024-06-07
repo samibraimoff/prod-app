@@ -1,9 +1,12 @@
 import styles from "./Main.module.scss";
+import { useTranslation } from "react-i18next";
 
 const Main = () => {
+  const { t } = useTranslation(["main", "translation"]);
+
   return (
     <div>
-      <h1>Main</h1>
+      <p>{t("mainPage")}</p>
     </div>
   );
 };
