@@ -1,7 +1,7 @@
-@import "./reset.scss";
-@import "./variables.scss";
-@import "./light.scss";
-@import "./dark.scss";
+@import "./reset";
+@import "./variables";
+@import "./light";
+@import "./dark";
 
 .app {
   background: var(--bg-color);
