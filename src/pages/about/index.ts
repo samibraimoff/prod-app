@@ -1,5 +1,5 @@
-import { AboutLazy as About } from "./ui/AboutLazy"
+import { AboutLazy as About } from './ui/AboutLazy';
 
 export {
-    About
-}
+    About,
+};

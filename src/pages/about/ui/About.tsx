@@ -1,12 +1,12 @@
-import styles from "./About.module.scss";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import styles from './About.module.scss';
 
 const About = () => {
-  const { t, i18n } = useTranslation(["about", "translation"]);
+  const { t } = useTranslation(['about', 'translation']);
 
   return (
     <div>
-      <p>{t("aboutPage")}</p>
+      <p>{t('aboutPage')}</p>
     </div>
   );
 };

@@ -1,12 +1,12 @@
-import styles from "./Main.module.scss";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
+import styles from './Main.module.scss';
 
 const Main = () => {
-  const { t } = useTranslation(["main", "translation"]);
+  const { t } = useTranslation(['main', 'translation']);
 
   return (
     <div>
-      <p>{t("mainPage")}</p>
+      <p>{t('mainPage')}</p>
     </div>
   );
 };
