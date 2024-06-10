@@ -3,5 +3,7 @@
   "links": {
     "about": "About",
     "main": "Main"
-  }
+  },
+  "notFound": "Error 404. Page not found. Reload the page!",
+  "returnToMain": "Return to main page"
 }
