@@ -1,9 +1,10 @@
-import { Suspense } from 'react';
 import { useTheme } from 'app/providers/theme';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/navbar';
 import './styles/index.scss';
 import { Sidebar } from 'widgets/sidebar';
+import { Suspense } from 'react';
+import { PageLoader } from 'widgets/pageLoader';
 import { AppRouter } from './providers/router';
 
 export const App = () => {
@@ -11,7 +12,7 @@ export const App = () => {
 
   return (
     <div className={classNames('app', {}, [theme])}>
-      <Suspense fallback='loading...'>
+      <Suspense fallback='loading..'>
         <Navbar />
         <div className='content'>
           <Sidebar />
