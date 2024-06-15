@@ -5,5 +5,7 @@
     "main": "Main"
   },
   "notFound": "Error 404. Page not found. Reload the page!",
-  "returnToMain": "Return to main page"
+  "returnToMain": "Return to main page",
+  "somethingWentWrong": "Something went wrong.",
+  "reload": "Reload"
 }
