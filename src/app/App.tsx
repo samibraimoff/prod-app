@@ -9,10 +9,6 @@ import './styles/index.scss';
 export const App = () => {
   const { theme } = useTheme();
 
-  useEffect(() => {
-    throw new Error('error');
-  }, []);
-
   return (
     <div className={classNames('app', {}, [theme])}>
       <Suspense fallback='loading..'>
