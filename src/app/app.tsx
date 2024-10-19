@@ -4,17 +4,20 @@ import "./styles/index.scss";
 import { AppRouter } from "app/providers/router";
 import { Navbar } from "widgets/navbar";
 import { SidebarMain } from "widgets/sidebar";
+import { Suspense } from "react";
 
 export const App = () => {
   const { theme } = useTheme();
 
   return (
     <div className={classNames("app", {}, [theme])}>
-      <Navbar />
-      <div className="content-page">
-        <SidebarMain />
-        <AppRouter />
-      </div>
+      <Suspense fallback="loading...">
+        <Navbar />
+        <div className="content-page">
+          <SidebarMain />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   );
 };
