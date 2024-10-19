@@ -5,11 +5,13 @@ import { routeConfig } from "shared/config/router-config";
 export const AppRouter = () => {
   return (
     <Suspense fallback="loading...">
-      <Routes>
-        {Object.values(routeConfig).map(({ element, path }) => (
-          <Route key={path} path={path} element={element} />
-        ))}
-      </Routes>
+      <div className="page-wrapper">
+        <Routes>
+          {Object.values(routeConfig).map(({ element, path }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
+        </Routes>
+      </div>
     </Suspense>
   );
 };
