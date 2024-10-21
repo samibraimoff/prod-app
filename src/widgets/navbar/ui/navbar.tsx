@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
-import styles from "./navbar.module.scss";
 import { classNames } from "shared/lib/helpers/classnames";
 import { AppLink, AppLinkTheme } from "shared/ui";
+import styles from "./navbar.module.scss";
 
 interface NavbarProps {
   className?: string;

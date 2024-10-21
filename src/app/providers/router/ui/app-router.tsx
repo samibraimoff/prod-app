@@ -1,8 +1,7 @@
-import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { routeConfig } from "shared/config";
 
-export const AppRouter = () => {
+export function AppRouter() {
   return (
     <div className="page-wrapper">
       <Routes>
@@ -12,4 +11,4 @@ export const AppRouter = () => {
       </Routes>
     </div>
   );
-};
+}
