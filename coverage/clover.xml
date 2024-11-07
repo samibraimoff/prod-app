@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1730093944985" clover="3.2.0">
-  <project timestamp="1730093944985" name="All files">
+<coverage generated="1730966161886" clover="3.2.0">
+  <project timestamp="1730966161886" name="All files">
     <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="6" coveredelements="6" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
     <file name="classnames.ts" path="/Users/sandibekibraimov/Projects/prod-project/src/shared/lib/helpers/classnames.ts">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
