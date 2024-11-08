@@ -13,7 +13,6 @@ export function App() {
         <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="loading...">
                 <Navbar />
-                testing i18next
                 <div className="content-page">
                     <SidebarMain />
                     <AppRouter />

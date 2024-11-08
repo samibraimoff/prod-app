@@ -1,5 +1,7 @@
 {
   "about": "about",
+  "goBackToMain": "goBackToMain",
   "language": "language",
-  "main": "main"
+  "main": "main",
+  "pageNotFound": "pageNotFound"
 }

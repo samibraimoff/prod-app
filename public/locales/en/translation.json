@@ -1,3 +1,5 @@
 {
-  "language": "RU"
+  "language": "RU",
+  "pageNotFound": "Page not found",
+  "goBackToMain": "Return to main page"
 }

@@ -12,7 +12,10 @@ i18n
         debug: __IS_DEV__,
         interpolation: {
             escapeValue: false,
-        },
+          },
+          react: {
+            useSuspense: true, 
+          },
         defaultNS: 'translation',
         fallbackNS: 'translation',
         lng: 'en',
