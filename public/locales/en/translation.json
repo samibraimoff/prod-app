@@ -1,5 +1,7 @@
 {
   "language": "RU",
   "pageNotFound": "Page not found",
-  "goBackToMain": "Return to main page"
+  "goBackToMain": "Return to main page",
+  "pageError": "Something went wrong, please update the page.",
+  "updatePage": "Update"
 }

@@ -3,5 +3,7 @@
   "goBackToMain": "goBackToMain",
   "language": "language",
   "main": "main",
-  "pageNotFound": "pageNotFound"
+  "pageError": "pageError",
+  "pageNotFound": "pageNotFound",
+  "updatePage": "updatePage"
 }
