@@ -1,3 +1,3 @@
-import {Test} from "./test"
+import { Test } from "./test";
 
 Test(123);
