@@ -1,4 +1,4 @@
-import { Suspense, useContext, useState } from "react";
+import { Suspense } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./themes/index.scss";
 import AboutPage from "./pages/about/about-page-lazy";
