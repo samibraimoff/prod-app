@@ -1,0 +1,11 @@
+@import "reset.scss";
+@import "light.scss";
+@import "dark.scss";
+@import "constants.scss";
+
+.app {
+  font: var(--font-medium);
+  background: var(--background);
+  color: var(--primary);
+  min-height: 100vh;
+}
