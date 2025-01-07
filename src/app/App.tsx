@@ -4,6 +4,7 @@ import "app/themes/index.scss";
 import { AppRouter } from "app/providers/app-router";
 import { useTheme } from "app/providers/theme-provider";
 import { classNames } from "shared/lib/classnames/classnames";
+import { Navbar } from "widgets/navbar";
 
 export const App = () => {
   const { theme, toggleTheme } = useTheme();
@@ -11,8 +12,7 @@ export const App = () => {
   return (
     <Suspense fallback={"loading..."}>
       <div className={classNames("app", {}, [theme])}>
-        <Link to={"/about"}>About</Link>
-        <Link to={"/"}>Main</Link>
+        <Navbar />
         <button onClick={toggleTheme}>theme</button>
         <AppRouter />
       </div>

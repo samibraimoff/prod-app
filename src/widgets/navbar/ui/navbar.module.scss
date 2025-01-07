@@ -1,0 +1,24 @@
+.navbar {
+  width: 100%;
+  height: var(--navbar-height);
+
+  background: var(--surface);
+  color: var(--onSurface);
+
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+.links {
+  margin-left: auto;
+}
+
+.mainLink {
+  margin-right: 15px;
+}
