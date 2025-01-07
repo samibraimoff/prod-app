@@ -1,16 +1,12 @@
 .navbar {
   width: 100%;
   height: var(--navbar-height);
-
-  background: var(--surface);
-  color: var(--onSurface);
-
+  background: var(--background);
   display: flex;
   align-items: center;
   padding: 20px;
 
   a {
-    color: inherit;
     text-decoration: inherit;
   }
 }
@@ -20,5 +16,5 @@
 }
 
 .mainLink {
-  margin-right: 15px;
+  margin-right: 1rem;
 }
