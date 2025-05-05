@@ -1,3 +1,4 @@
+import { buildDevServer } from "./build-dev-server";
 import { buildLoaders } from "./build-loaders";
 import { buildPlugins } from "./build-plugins";
 import { buildResolvers } from "./build-resolvers";
@@ -19,5 +20,10 @@ export const buildWebpackConfig = (options: BuildOptions) => {
       rules: buildLoaders(),
     },
     resolve: buildResolvers(),
+    devtool: isDev ? "inline-source-map" : false,
+    devServer: isDev ? buildDevServer(options) : undefined,
+    performance: {
+      hints: false,
+    },
   };
 };
