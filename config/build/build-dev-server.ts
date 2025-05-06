@@ -8,5 +8,6 @@ export const buildDevServer = (
     hot: true,
     open: true,
     port: options.port,
+    historyApiFallback: true,
   };
 };

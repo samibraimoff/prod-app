@@ -14,10 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "samibraimoff"
-  }
+  "lastFilter": {}
 }]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
@@ -50,6 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/sandibekibraimov/Projects/prod-app/src/pages/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +68,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/main" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.build:prod">
     <configuration name="bundle.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/dist/bundle.js" working-dir="$PROJECT_DIR$/dist">
       <method v="2" />
@@ -116,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746422654992</updated>
-      <workItem from="1746422656121" duration="13154000" />
+      <workItem from="1746422656121" duration="15046000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -158,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746502215462</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding scss modules">
+      <option name="closed" value="true" />
+      <created>1746505558730</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746505558730</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +192,7 @@
     <MESSAGE value="refactor webpack config file" />
     <MESSAGE value="add webpack devserver and env variable" />
     <MESSAGE value="adding css, typescript, react and npm scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding css, typescript, react and npm scripts" />
+    <MESSAGE value="adding scss modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding scss modules" />
   </component>
 </project>
