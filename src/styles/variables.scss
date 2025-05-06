@@ -1,0 +1,12 @@
+:root {
+  --font-family:    'Open-Sans', sans-serif;
+
+  --font-line-height:  1.5;
+  --font-weight-normal:400;
+  --font-weight-bold:  700;
+  --font-m-size:       1rem;    /* medium text */
+  --font-l-size:       1.25rem; /* headings, larger text */
+
+  --font-m: var(--font-weight-normal) var(--font-m-size)/var(--font-line-height) var(--font-family);
+  --font-l: var(--font-weight-bold)   var(--font-l-size)/var(--font-line-height)   var(--font-family);
+}
