@@ -58,7 +58,7 @@
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -116,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746422654992</updated>
-      <workItem from="1746422656121" duration="10845000" />
+      <workItem from="1746422656121" duration="13154000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -150,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746431426921</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding css, typescript, react and npm scripts">
+      <option name="closed" value="true" />
+      <created>1746502215462</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746502215462</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +180,7 @@
     <MESSAGE value="adding more devtools and updating webpack config, adding typescript" />
     <MESSAGE value="refactor webpack config file" />
     <MESSAGE value="add webpack devserver and env variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="add webpack devserver and env variable" />
+    <MESSAGE value="adding css, typescript, react and npm scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding css, typescript, react and npm scripts" />
   </component>
 </project>
