@@ -122,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746422654992</updated>
-      <workItem from="1746422656121" duration="17805000" />
+      <workItem from="1746422656121" duration="18452000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -180,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746507570641</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding light and dark theme, adding theme context and theme custom hook">
+      <option name="closed" value="true" />
+      <created>1746510195649</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746510195649</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +213,7 @@
     <MESSAGE value="adding css, typescript, react and npm scripts" />
     <MESSAGE value="adding scss modules" />
     <MESSAGE value="adding react router dom, adding pages, making it lazy load" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding react router dom, adding pages, making it lazy load" />
+    <MESSAGE value="adding light and dark theme, adding theme context and theme custom hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding light and dark theme, adding theme context and theme custom hook" />
   </component>
 </project>
