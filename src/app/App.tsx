@@ -1,8 +1,8 @@
 import { Link, Routes, Route } from "react-router-dom";
-import { classNames } from "./lib/class-names/class-names";
-import { AboutAsync as About } from "./pages/about/about.lazy";
-import { MainAsync as Main } from "./pages/main/main.lazy";
-import { useTheme } from "./theme/use-theme";
+import { classNames } from "shared/lib/class-names/class-names";
+import { About } from "pages/about";
+import { Main } from "pages/main";
+import { useTheme } from "./providers/theme";
 import "./styles/index.scss";
 
 export const App = () => {
