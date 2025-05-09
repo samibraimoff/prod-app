@@ -60,7 +60,7 @@
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
     "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -131,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746422654992</updated>
       <workItem from="1746422656121" duration="21746000" />
-      <workItem from="1746600846359" duration="2390000" />
+      <workItem from="1746600846359" duration="5759000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -205,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746510970823</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="creating app router config and AppRouter component">
+      <option name="closed" value="true" />
+      <created>1746689494661</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746689494661</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +240,7 @@
     <MESSAGE value="adding react router dom, adding pages, making it lazy load" />
     <MESSAGE value="adding light and dark theme, adding theme context and theme custom hook" />
     <MESSAGE value="adding classnames function to filter out classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding classnames function to filter out classes" />
+    <MESSAGE value="creating app router config and AppRouter component" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating app router config and AppRouter component" />
   </component>
 </project>
