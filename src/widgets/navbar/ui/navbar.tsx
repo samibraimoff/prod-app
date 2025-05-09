@@ -1,5 +1,6 @@
 import { classNames } from "shared/lib/class-names/class-names";
 import { Link, LinkTheme } from "shared/ui";
+import { ThemeSwitcher } from "widgets/theme-switcher";
 import classes from "./navbar.module.scss";
 
 interface NavbarProps {
@@ -11,6 +12,7 @@ export const Navbar = (props: NavbarProps) => {
 
   return (
     <div className={classNames(classes.navbar, {}, [className])}>
+      <ThemeSwitcher />
       <div className={classes.links}>
         <Link
           theme={LinkTheme.SECONDARY}
