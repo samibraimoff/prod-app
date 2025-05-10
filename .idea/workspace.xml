@@ -45,6 +45,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Jest.classNames.should return correct class names.executor": "Run",
+    "Jest.classNames.should return one class name.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.bundle.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -60,6 +62,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.stylelint": "/Users/sandibekibraimov/Projects/prod-app/node_modules/stylelint",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/jest",
     "nodejs_package_manager_path": "npm",
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
@@ -81,14 +84,40 @@
       <recent name="$PROJECT_DIR$/src/pages/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/jest" />
       <recent name="$PROJECT_DIR$/src/shared/assets/icons" />
       <recent name="$PROJECT_DIR$/src/pages/main/ui" />
       <recent name="$PROJECT_DIR$/src/pages/about/ui" />
       <recent name="$PROJECT_DIR$/src/shared" />
-      <recent name="$PROJECT_DIR$/src/app/providers/theme/hooks" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build:prod">
+  <component name="RunManager" selected="Jest.classNames.should return correct class names">
+    <configuration name="classNames.should return correct class names" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/shared/lib/class-names/class-names.test.ts" />
+      <test-names>
+        <test-name value="classNames" />
+        <test-name value="should return correct class names" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="classNames.should return one class name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/shared/lib/class-names/class-names.test.ts" />
+      <test-names>
+        <test-name value="classNames" />
+        <test-name value="should return one class name" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="bundle.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/dist/bundle.js" working-dir="$PROJECT_DIR$/dist">
       <method v="2" />
     </configuration>
@@ -114,6 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.classNames.should return correct class names" />
+        <item itemvalue="Jest.classNames.should return one class name" />
         <item itemvalue="npm.build:prod" />
         <item itemvalue="npm.build:dev" />
         <item itemvalue="Node.js.bundle.js" />
@@ -141,7 +172,7 @@
       <workItem from="1746854459741" duration="65000" />
       <workItem from="1746854533504" duration="105000" />
       <workItem from="1746854647283" duration="127000" />
-      <workItem from="1746854788703" duration="9103000" />
+      <workItem from="1746854788703" duration="11321000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -279,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746902806444</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update stylelint linter and instal recommended plugins">
+      <option name="closed" value="true" />
+      <created>1746907949094</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1746907949094</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +353,7 @@
     <MESSAGE value="install babel loader" />
     <MESSAGE value="install eslint and fix all files" />
     <MESSAGE value="install stylelint and fix scss  files" />
-    <option name="LAST_COMMIT_MESSAGE" value="install stylelint and fix scss  files" />
+    <MESSAGE value="update stylelint linter and instal recommended plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="update stylelint linter and instal recommended plugins" />
   </component>
 </project>

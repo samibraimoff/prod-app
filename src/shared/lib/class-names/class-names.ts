@@ -10,4 +10,4 @@ export const classNames = (
     ...Object.entries(mods)
         .filter(([_, value]) => Boolean(value))
         .map(([className, _]) => className),
-].join(' ');
+].join(' ').trim();
