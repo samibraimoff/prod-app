@@ -132,7 +132,7 @@
       <updated>1746422654992</updated>
       <workItem from="1746422656121" duration="21746000" />
       <workItem from="1746600846359" duration="9521000" />
-      <workItem from="1746841343147" duration="3715000" />
+      <workItem from="1746841343147" duration="5427000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -238,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746770175697</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add lang switcher widget and translations">
+      <option name="closed" value="true" />
+      <created>1746846698029</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1746846698029</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +277,7 @@
     <MESSAGE value="creating navbar, link, updated style variables" />
     <MESSAGE value="creating ui toolkit button, theme switcher, adding icon assets, svg and file loaders in webpack" />
     <MESSAGE value="update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="update gitignore" />
+    <MESSAGE value="add lang switcher widget and translations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lang switcher widget and translations" />
   </component>
 </project>
