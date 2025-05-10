@@ -54,15 +54,17 @@
     "last_opened_file_path": "/Users/sandibekibraimov/Projects/prod-app/src/pages/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "/Users/sandibekibraimov/Projects/prod-app/node_modules/stylelint",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "settings.editor.selected.configurable": "configurable.stylesheets.stylelint",
     "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -139,7 +141,7 @@
       <workItem from="1746854459741" duration="65000" />
       <workItem from="1746854533504" duration="105000" />
       <workItem from="1746854647283" duration="127000" />
-      <workItem from="1746854788703" duration="7859000" />
+      <workItem from="1746854788703" duration="9103000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -269,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746858496537</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="install stylelint and fix scss  files">
+      <option name="closed" value="true" />
+      <created>1746902806444</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1746902806444</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +313,7 @@
     <MESSAGE value="add lang switcher widget and translations" />
     <MESSAGE value="install babel loader" />
     <MESSAGE value="install eslint and fix all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="install eslint and fix all files" />
+    <MESSAGE value="install stylelint and fix scss  files" />
+    <option name="LAST_COMMIT_MESSAGE" value="install stylelint and fix scss  files" />
   </component>
 </project>

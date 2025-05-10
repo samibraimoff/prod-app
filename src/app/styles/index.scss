@@ -4,17 +4,17 @@
 @import "dark";
 
 .app {
-  font: var(--font-m);
-  background: var(--bg);
-  color: var(--text-primary);
-  min-height: 100vh;
+    font: var(--font-m);
+    background: var(--bg);
+    color: var(--text-primary);
+    min-height: 100vh;
 }
 
 .content {
-  display: flex;
+    display: flex;
 }
 
 .wrapper {
-  flex-grow: 1;
-  padding: 10px;
+    flex-grow: 1;
+    padding: 10px;
 }
