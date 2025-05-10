@@ -16,13 +16,13 @@ export function Navbar(props: NavbarProps) {
             <div className={classes.links}>
                 <Link
                     theme={LinkTheme.SECONDARY}
-                    to="/about"
-                    className={classes.mainLink}
+                    to="/"
+                    className={classes['main-link']}
                 >
-                    {t('about.link')}
-                </Link>
-                <Link theme={LinkTheme.SECONDARY} to="/">
                     {t('main.link')}
+                </Link>
+                <Link theme={LinkTheme.SECONDARY} to="/about">
+                    {t('about.link')}
                 </Link>
             </div>
         </div>

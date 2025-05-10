@@ -139,7 +139,7 @@
       <workItem from="1746854459741" duration="65000" />
       <workItem from="1746854533504" duration="105000" />
       <workItem from="1746854647283" duration="127000" />
-      <workItem from="1746854788703" duration="3630000" />
+      <workItem from="1746854788703" duration="7859000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -261,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746848055317</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="install eslint and fix all files">
+      <option name="closed" value="true" />
+      <created>1746858496537</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746858496537</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +302,7 @@
     <MESSAGE value="update gitignore" />
     <MESSAGE value="add lang switcher widget and translations" />
     <MESSAGE value="install babel loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="install babel loader" />
+    <MESSAGE value="install eslint and fix all files" />
+    <option name="LAST_COMMIT_MESSAGE" value="install eslint and fix all files" />
   </component>
 </project>
