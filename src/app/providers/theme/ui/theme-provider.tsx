@@ -7,10 +7,6 @@ const defaultTheme =
 export const ThemeProvider: FC = (props) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme);
 
-  const toggleTheme = () => {
-    setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT);
-  };
-
   const defaultProps = useMemo(
     () => ({
       theme,

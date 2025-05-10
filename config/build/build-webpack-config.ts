@@ -15,7 +15,7 @@ export const buildWebpackConfig = (options: BuildOptions) => {
       path: paths.output,
       clean: true,
     },
-    plugins: buildPlugins(paths),
+    plugins: buildPlugins(options),
     module: {
       rules: buildLoaders(options),
     },

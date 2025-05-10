@@ -1,0 +1,11 @@
+{
+  "language": "Ru",
+  "main": {
+    "title": "Main page",
+    "link": "Main"
+  },
+  "about": {
+    "title": "About page",
+    "link": "About"
+  }
+}
