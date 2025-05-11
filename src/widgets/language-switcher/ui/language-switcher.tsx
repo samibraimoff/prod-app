@@ -10,7 +10,9 @@ interface LanguageSwitcherProps {
 export function LanguageSwitcher(props: LanguageSwitcherProps) {
     const { className } = props;
     const { t, i18n } = useTranslation();
-    const changeLang = () => (i18n.language === 'en-US' ? i18n.changeLanguage('ru-RU') : i18n.changeLanguage('en-US'));
+    const changeLang = () => (i18n.language === 'en-US'
+        ? i18n.changeLanguage('ru-RU')
+        : i18n.changeLanguage('en-US'));
 
     return (
         <Button

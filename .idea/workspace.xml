@@ -172,7 +172,7 @@
       <workItem from="1746854459741" duration="65000" />
       <workItem from="1746854533504" duration="105000" />
       <workItem from="1746854647283" duration="127000" />
-      <workItem from="1746854788703" duration="11321000" />
+      <workItem from="1746854788703" duration="13455000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -318,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746907949094</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="install jest and configure, create first test">
+      <option name="closed" value="true" />
+      <created>1746910689179</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1746910689179</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +362,7 @@
     <MESSAGE value="install eslint and fix all files" />
     <MESSAGE value="install stylelint and fix scss  files" />
     <MESSAGE value="update stylelint linter and instal recommended plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="update stylelint linter and instal recommended plugins" />
+    <MESSAGE value="install jest and configure, create first test" />
+    <option name="LAST_COMMIT_MESSAGE" value="install jest and configure, create first test" />
   </component>
 </project>
