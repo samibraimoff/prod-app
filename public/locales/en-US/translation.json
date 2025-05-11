@@ -7,5 +7,7 @@
   "about": {
     "title": "About page",
     "link": "About"
-  }
+  },
+  "page_not_found_title": "404",
+  "page_not_found_description": "Page not found, please reload the page."
 }

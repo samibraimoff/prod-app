@@ -7,7 +7,7 @@ import 'shared/config/i18n/i18n';
 
 render(
     <BrowserRouter>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback="">
             <ThemeProvider>
                 <App />
             </ThemeProvider>
