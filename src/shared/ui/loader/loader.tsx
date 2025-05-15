@@ -6,21 +6,21 @@ interface LoaderProps {
 }
 
 export const Loader = (props: LoaderProps) => {
-    const { className } = props;
-    return (
-        <div className={classNames('lds-default', {}, [className])}>
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-        </div>
-    );
+  const { className } = props;
+  return (
+    <div className={classNames('lds-default', {}, [className])}>
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+    </div>
+  );
 };

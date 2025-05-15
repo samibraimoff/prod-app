@@ -2,11 +2,11 @@ import { ResolveOptions } from 'webpack';
 import { BuildOptions } from './types';
 
 export const buildResolvers = (
-    options: BuildOptions,
+  options: BuildOptions,
 ): ResolveOptions => ({
-    extensions: ['.tsx', '.ts', '.js'],
-    preferAbsolute: true,
-    modules: [options.paths.src, 'node_modules'],
-    mainFiles: ['index'],
-    alias: {},
+  extensions: ['.tsx', '.ts', '.js'],
+  preferAbsolute: true,
+  modules: [options.paths.src, 'node_modules'],
+  mainFiles: ['index'],
+  alias: {},
 });

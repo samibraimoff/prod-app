@@ -14,17 +14,17 @@ interface Props extends LinkProps {
 }
 
 export const Link: FC<Props> = (props: Props) => {
-    const {
-        children, className, theme, to, ...rest
-    } = props;
+  const {
+    children, className, theme, to, ...rest
+  } = props;
 
-    return (
-        <RouterLink
-            to={to}
-            {...rest}
-            className={classNames(classes.link, {}, [className, classes[theme]])}
-        >
-            {children}
-        </RouterLink>
-    );
+  return (
+    <RouterLink
+      to={to}
+      {...rest}
+      className={classNames(classes.link, {}, [className, classes[theme]])}
+    >
+      {children}
+    </RouterLink>
+  );
 };

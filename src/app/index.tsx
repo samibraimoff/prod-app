@@ -7,14 +7,14 @@ import { App } from './App';
 import 'shared/config/i18n/i18n';
 
 render(
-    <BrowserRouter>
-        <ErrorBoundary>
-            <Suspense fallback="">
-                <ThemeProvider>
-                    <App />
-                </ThemeProvider>
-            </Suspense>
-        </ErrorBoundary>
-    </BrowserRouter>,
-    document.getElementById('root'),
+  <BrowserRouter>
+    <ErrorBoundary>
+      <Suspense fallback="">
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </Suspense>
+    </ErrorBoundary>
+  </BrowserRouter>,
+  document.getElementById('root'),
 );

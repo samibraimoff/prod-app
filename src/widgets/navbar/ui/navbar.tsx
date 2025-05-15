@@ -8,23 +8,23 @@ interface NavbarProps {
 }
 
 export function Navbar(props: NavbarProps) {
-    const { className } = props;
-    const { t } = useTranslation();
+  const { className } = props;
+  const { t } = useTranslation();
 
-    return (
-        <div className={classNames(classes.navbar, {}, [className])}>
-            <div className={classes.links}>
-                <Link
-                    theme={LinkTheme.SECONDARY}
-                    to="/"
-                    className={classes['main-link']}
-                >
-                    {t('main.link')}
-                </Link>
-                <Link theme={LinkTheme.SECONDARY} to="/about">
-                    {t('about.link')}
-                </Link>
-            </div>
-        </div>
-    );
+  return (
+    <div className={classNames(classes.navbar, {}, [className])}>
+      <div className={classes.links}>
+        <Link
+          theme={LinkTheme.SECONDARY}
+          to="/"
+          className={classes['main-link']}
+        >
+          {t('main.link')}
+        </Link>
+        <Link theme={LinkTheme.SECONDARY} to="/about">
+          {t('about.link')}
+        </Link>
+      </div>
+    </div>
+  );
 }

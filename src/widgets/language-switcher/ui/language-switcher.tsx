@@ -8,19 +8,19 @@ interface LanguageSwitcherProps {
 }
 
 export function LanguageSwitcher(props: LanguageSwitcherProps) {
-    const { className } = props;
-    const { t, i18n } = useTranslation();
-    const changeLang = () => (i18n.language === 'en-US'
-        ? i18n.changeLanguage('ru-RU')
-        : i18n.changeLanguage('en-US'));
+  const { className } = props;
+  const { t, i18n } = useTranslation();
+  const changeLang = () => (i18n.language === 'en-US'
+    ? i18n.changeLanguage('ru-RU')
+    : i18n.changeLanguage('en-US'));
 
-    return (
-        <Button
-            theme={ButtonTheme.CLEAR}
-            onClick={changeLang}
-            className={classNames(classes['language-switcher'], {}, [className])}
-        >
-            {t('language')}
-        </Button>
-    );
+  return (
+    <Button
+      theme={ButtonTheme.CLEAR}
+      onClick={changeLang}
+      className={classNames(classes['language-switcher'], {}, [className])}
+    >
+      {t('language')}
+    </Button>
+  );
 }
