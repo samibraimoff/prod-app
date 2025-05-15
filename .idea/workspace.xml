@@ -27,7 +27,7 @@
   &quot;isMigrated&quot;: true
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -42,43 +42,44 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Jest.classNames.should return correct class names.executor": "Run",
-    "Jest.classNames.should return one class name.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.bundle.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/sandibekibraimov/Projects/prod-app/src/pages/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "/Users/sandibekibraimov/Projects/prod-app/node_modules/stylelint",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "npm.build:dev.executor": "Run",
-    "npm.build:prod.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "configurable.stylesheets.stylelint",
-    "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Jest.classNames.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.classNames.should return correct class names.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.classNames.should return one class name.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.bundle.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sandibekibraimov/Projects/prod-app/src/pages/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/sandibekibraimov/Projects/prod-app/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/sandibekibraimov/Projects/prod-app/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build:dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.build:prod.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/main" />
@@ -91,17 +92,16 @@
       <recent name="$PROJECT_DIR$/src/shared" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.classNames.should return correct class names">
-    <configuration name="classNames.should return correct class names" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.classNames">
+    <configuration name="classNames" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
+      <scope-kind value="SUITE" />
       <test-file value="$PROJECT_DIR$/src/shared/lib/class-names/class-names.test.ts" />
       <test-names>
         <test-name value="classNames" />
-        <test-name value="should return correct class names" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.classNames.should return correct class names" />
-        <item itemvalue="Jest.classNames.should return one class name" />
+        <item itemvalue="Jest.classNames" />
         <item itemvalue="npm.build:prod" />
         <item itemvalue="npm.build:dev" />
         <item itemvalue="Node.js.bundle.js" />
+        <item itemvalue="Jest.classNames.should return one class name" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +172,10 @@
       <workItem from="1746854459741" duration="65000" />
       <workItem from="1746854533504" duration="105000" />
       <workItem from="1746854647283" duration="127000" />
-      <workItem from="1746854788703" duration="23368000" />
+      <workItem from="1746854788703" duration="23983000" />
+      <workItem from="1747282187092" duration="1286000" />
+      <workItem from="1747285113764" duration="1172000" />
+      <workItem from="1747286290028" duration="146000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -350,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747275845557</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add bundle analyzer">
+      <option name="closed" value="true" />
+      <created>1747281581061</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1747281581061</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +401,7 @@
     <MESSAGE value="fix lint errors, update eslint config" />
     <MESSAGE value="add page loader widget and loader ui tool kit" />
     <MESSAGE value="add error boundary and error boundary message widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="add error boundary and error boundary message widget" />
+    <MESSAGE value="add bundle analyzer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add bundle analyzer" />
   </component>
 </project>

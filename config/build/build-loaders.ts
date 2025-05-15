@@ -45,6 +45,7 @@ export const buildLoaders = ({
             {
                 loader: 'css-loader',
                 options: {
+                    sourceMap: isDev,
                     modules: {
                         auto: (resourcePath: string) => Boolean(resourcePath.includes('.module.')),
                         localIdentName: isDev
@@ -54,7 +55,10 @@ export const buildLoaders = ({
                 },
             },
             // Compiles Sass to CSS
-            'sass-loader',
+            {
+                loader: 'sass-loader',
+                options: { sourceMap: isDev },
+            },
         ],
     };
 
