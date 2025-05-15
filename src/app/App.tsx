@@ -1,4 +1,5 @@
 import { AppRouter } from 'app/providers/router';
+import { useEffect } from 'react';
 import { classNames } from 'shared/lib/class-names/class-names';
 import { Navbar } from 'widgets/navbar';
 import { Sidebar } from 'widgets/sidebar';
@@ -7,7 +8,6 @@ import './styles/index.scss';
 
 export function App() {
     const { theme } = useTheme();
-
     return (
         <div className={classNames('app', {}, [theme])}>
             <Navbar />
