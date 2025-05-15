@@ -172,7 +172,7 @@
       <workItem from="1746854459741" duration="65000" />
       <workItem from="1746854533504" duration="105000" />
       <workItem from="1746854647283" duration="127000" />
-      <workItem from="1746854788703" duration="22176000" />
+      <workItem from="1746854788703" duration="23368000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -342,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746943520520</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add error boundary and error boundary message widget">
+      <option name="closed" value="true" />
+      <created>1747275845557</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1747275845557</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +389,7 @@
     <MESSAGE value="install jest and configure, create first test" />
     <MESSAGE value="fix lint errors, update eslint config" />
     <MESSAGE value="add page loader widget and loader ui tool kit" />
-    <option name="LAST_COMMIT_MESSAGE" value="add page loader widget and loader ui tool kit" />
+    <MESSAGE value="add error boundary and error boundary message widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="add error boundary and error boundary message widget" />
   </component>
 </project>
