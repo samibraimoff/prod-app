@@ -1,6 +1,10 @@
 import '@testing-library/jest-dom';
 import 'regenerator-runtime/runtime';
 
+import { toHaveNoViolations } from 'jest-axe';
+
+expect.extend(toHaveNoViolations);
+
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({
     t: (key: string) => key,

@@ -176,7 +176,7 @@
       <workItem from="1747282187092" duration="1286000" />
       <workItem from="1747285113764" duration="1172000" />
       <workItem from="1747286290028" duration="146000" />
-      <workItem from="1747380939417" duration="4220000" />
+      <workItem from="1747380939417" duration="9945000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -362,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747281581061</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add storybook">
+      <option name="closed" value="true" />
+      <created>1747385300401</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1747385300401</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,6 +411,7 @@
     <MESSAGE value="add page loader widget and loader ui tool kit" />
     <MESSAGE value="add error boundary and error boundary message widget" />
     <MESSAGE value="add bundle analyzer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bundle analyzer" />
+    <MESSAGE value="add storybook" />
+    <option name="LAST_COMMIT_MESSAGE" value="add storybook" />
   </component>
 </project>
