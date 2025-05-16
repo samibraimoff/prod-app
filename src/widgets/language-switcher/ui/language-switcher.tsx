@@ -16,6 +16,7 @@ export function LanguageSwitcher(props: LanguageSwitcherProps) {
 
   return (
     <Button
+      data-testid="language-switcher"
       theme={ButtonTheme.CLEAR}
       onClick={changeLang}
       className={classNames(classes['language-switcher'], {}, [className])}
