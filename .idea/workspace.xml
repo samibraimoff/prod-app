@@ -185,7 +185,7 @@
       <workItem from="1747286290028" duration="146000" />
       <workItem from="1747380939417" duration="9945000" />
       <workItem from="1747467441069" duration="643000" />
-      <workItem from="1747468233584" duration="2249000" />
+      <workItem from="1747468233584" duration="2444000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -403,7 +403,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747469712691</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="update webpack to fix build">
+      <option name="closed" value="true" />
+      <created>1747470525100</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1747470525100</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding more devtools and updating webpack config, adding typescript" />
     <MESSAGE value="refactor webpack config file" />
     <MESSAGE value="add webpack devserver and env variable" />
     <MESSAGE value="adding css, typescript, react and npm scripts" />
@@ -446,6 +453,7 @@
     <MESSAGE value="add storybook" />
     <MESSAGE value="add github action yml" />
     <MESSAGE value="update yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update yml" />
+    <MESSAGE value="update webpack to fix build" />
+    <option name="LAST_COMMIT_MESSAGE" value="update webpack to fix build" />
   </component>
 </project>
