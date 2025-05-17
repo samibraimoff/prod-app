@@ -1,0 +1,8 @@
+name: Main Pipeline
+run-name: ${{github.actor}} is running pipeline.
+on: [push]
+jobs:
+  Main-Pipeline:
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: echo "the job was triggered"
