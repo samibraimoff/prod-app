@@ -185,7 +185,7 @@
       <workItem from="1747286290028" duration="146000" />
       <workItem from="1747380939417" duration="9945000" />
       <workItem from="1747467441069" duration="643000" />
-      <workItem from="1747468233584" duration="438000" />
+      <workItem from="1747468233584" duration="1202000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -379,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747385300401</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add github action yml">
+      <option name="closed" value="true" />
+      <created>1747468693650</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1747468693650</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +405,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit, project setup" />
     <MESSAGE value="adding more devtools and updating webpack config, adding typescript" />
     <MESSAGE value="refactor webpack config file" />
     <MESSAGE value="add webpack devserver and env variable" />
@@ -421,6 +428,8 @@
     <MESSAGE value="add error boundary and error boundary message widget" />
     <MESSAGE value="add bundle analyzer" />
     <MESSAGE value="add storybook" />
-    <option name="LAST_COMMIT_MESSAGE" value="add storybook" />
+    <MESSAGE value="add github action yml" />
+    <MESSAGE value="update yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update yml" />
   </component>
 </project>
