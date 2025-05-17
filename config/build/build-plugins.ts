@@ -6,20 +6,27 @@ import { BuildOptions } from './types';
 
 export const buildPlugins = (
   options: BuildOptions,
-): webpack.WebpackPluginInstance[] => [
-  new HTMLWebpackPlugin({
-    template: options.paths.html,
-  }),
-  new ProgressPlugin(),
-  new MiniCssExtractPlugin({
-    filename: 'css/[name].[contenthash].css',
-    chunkFilename: 'css/[name].[contenthash].css',
-  }),
-  new webpack.DefinePlugin({
-    __IS_DEV__: JSON.stringify(options.isDev),
-  }),
-  new webpack.HotModuleReplacementPlugin(),
-  new BundleAnalyzerPlugin({
-    openAnalyzer: false,
-  }),
-];
+): webpack.WebpackPluginInstance[] => {
+  const plugins = [
+    new HTMLWebpackPlugin({
+      template: options.paths.html,
+    }),
+    new ProgressPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].[contenthash].css',
+      chunkFilename: 'css/[name].[contenthash].css',
+    }),
+    new webpack.DefinePlugin({
+      __IS_DEV__: JSON.stringify(options.isDev),
+    }),
+  ];
+
+  if (options.isDev) {
+    plugins.push(new webpack.HotModuleReplacementPlugin());
+    plugins.push(new BundleAnalyzerPlugin({
+      openAnalyzer: false,
+    }));
+  }
+
+  return plugins;
+};
