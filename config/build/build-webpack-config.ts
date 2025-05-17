@@ -25,7 +25,7 @@ export const buildWebpackConfig = (options: BuildOptions) => {
     performance: {
       hints: false,
     },
-    watch: true,
+    watch: isDev,
     cache: false,
   };
 };
