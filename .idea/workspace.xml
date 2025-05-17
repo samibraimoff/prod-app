@@ -52,6 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Jest.LanguageSwitcher.executor": "Run",
     "Jest.classNames.executor": "Run",
     "Jest.classNames.should return correct class names.executor": "Run",
     "Jest.classNames.should return one class name.executor": "Run",
@@ -99,7 +100,19 @@
       <recent name="$PROJECT_DIR$/src/shared" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.classNames">
+  <component name="RunManager" selected="Jest.LanguageSwitcher">
+    <configuration name="LanguageSwitcher" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/widgets/language-switcher/ui/language-switcher.test.tsx" />
+      <test-names>
+        <test-name value="LanguageSwitcher" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="classNames" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -109,19 +122,6 @@
       <test-file value="$PROJECT_DIR$/src/shared/lib/class-names/class-names.test.ts" />
       <test-names>
         <test-name value="classNames" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="classNames.should return one class name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/shared/lib/class-names/class-names.test.ts" />
-      <test-names>
-        <test-name value="classNames" />
-        <test-name value="should return one class name" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.LanguageSwitcher" />
         <item itemvalue="Jest.classNames" />
         <item itemvalue="npm.build:prod" />
         <item itemvalue="npm.build:dev" />
         <item itemvalue="Node.js.bundle.js" />
-        <item itemvalue="Jest.classNames.should return one class name" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +185,7 @@
       <workItem from="1747286290028" duration="146000" />
       <workItem from="1747380939417" duration="9945000" />
       <workItem from="1747467441069" duration="643000" />
-      <workItem from="1747468233584" duration="2444000" />
+      <workItem from="1747468233584" duration="2697000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -411,7 +411,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747470525100</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="fix scss lint issue">
+      <option name="closed" value="true" />
+      <created>1747470708602</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1747470708602</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +437,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor webpack config file" />
     <MESSAGE value="add webpack devserver and env variable" />
     <MESSAGE value="adding css, typescript, react and npm scripts" />
     <MESSAGE value="adding scss modules" />
@@ -454,6 +461,7 @@
     <MESSAGE value="add github action yml" />
     <MESSAGE value="update yml" />
     <MESSAGE value="update webpack to fix build" />
-    <option name="LAST_COMMIT_MESSAGE" value="update webpack to fix build" />
+    <MESSAGE value="fix scss lint issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix scss lint issue" />
   </component>
 </project>
