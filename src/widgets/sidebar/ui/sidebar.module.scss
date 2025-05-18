@@ -6,16 +6,65 @@
     background: var(--surface);
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
-    background: var(--surface);
-}
-
 .switchers {
     position: absolute;
     bottom: 20px;
     justify-content: center;
     width: 100%;
     display: flex;
+}
+
+.themeSwitcher {
+    margin-right: 10px;
+}
+
+
+.collapsedBtn {
+    position: absolute;
+    right: -40px;
+    bottom: 40px;
+}
+
+.links {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
     flex-direction: column;
+    justify-items: center;
+}
+
+.link {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.link-text {
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.icon {
+    fill: var(--primary)
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+    background: var(--surface);
+
+    .switchers {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .themeSwitcher {
+        margin-right: 0;
+    }
+
+    .link-text {
+        opacity: 0;
+        transition: 0.2s opacity;
+        width: 0;
+    }
 }

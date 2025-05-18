@@ -1,9 +1,9 @@
 .app.dark {
-    --bg: #111;
-    --surface: #1e1e1e;
-    --text-primary: #eee;
-    --text-secondary: #aaa;
-    --primary: #39f;
-    --secondary: #777;
-    --border: #333;
+    --bg: #1d1d1f;            /* very dark grey background */
+    --surface: #2c2c2e;       /* slightly lighter panels */
+    --text-primary: #fff;  /* white for main text */
+    --text-secondary: #e0e0e0;/* much lighter grey for captions */
+    --primary: #0a84ff;       /* iOS/macOS accent blue */
+    --secondary: #5e5e62;     /* darker grey for secondary actions */
+    --border: #3a3a3c;        /* darker separator lines */
 }

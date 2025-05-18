@@ -1,10 +1,10 @@
 :root,
 .app.light {
-    --bg: #fff;       /* page background */
-    --surface: #f7f7f7;    /* cards, panels */
-    --text-primary: #111;       /* main body text */
-    --text-secondary: #555;     /* captions, metadata */
-    --primary: #06f;    /* links, buttons */
-    --secondary: #888;       /* secondary actions */
-    --border: #ddd;       /* dividers, inputs */
+    --bg: #fff;            /* pure white background */
+    --surface: #f5f5f7;       /* very light grey panels */
+    --text-primary: #1d1d1f;  /* near-black for main text */
+    --text-secondary: #6e6e73;/* muted grey for captions */
+    --primary: #0071e3;       /* Apple-style link & button blue */
+    --secondary: #a1a1aa;     /* secondary action grey */
+    --border: #d2d2d7;        /* subtle separators */
 }

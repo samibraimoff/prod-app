@@ -14,16 +14,7 @@ export function Navbar(props: NavbarProps) {
   return (
     <div className={classNames(classes.navbar, {}, [className])}>
       <div className={classes.links}>
-        <Link
-          theme={LinkTheme.SECONDARY}
-          to="/"
-          className={classes['main-link']}
-        >
-          {t('main.link')}
-        </Link>
-        <Link theme={LinkTheme.SECONDARY} to="/about">
-          {t('about.link')}
-        </Link>
+        /
       </div>
     </div>
   );
