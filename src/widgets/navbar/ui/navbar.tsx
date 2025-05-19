@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/class-names/class-names';
-import { Link, LinkTheme } from 'shared/ui';
 import classes from './navbar.module.scss';
 
 interface NavbarProps {

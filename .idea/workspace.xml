@@ -76,7 +76,7 @@
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "indent.rainbow.settings.IrConfigurable",
     "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -186,6 +186,7 @@
       <workItem from="1747380939417" duration="9945000" />
       <workItem from="1747467441069" duration="643000" />
       <workItem from="1747468233584" duration="13261000" />
+      <workItem from="1747688675699" duration="654000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
