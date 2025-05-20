@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
-import { Sidebar } from 'widgets/sidebar';
 import { RenderWithProviders } from 'shared/lib/tests/render-with-providers';
+import { Sidebar } from 'widgets/sidebar';
 
 describe('Sidebar', () => {
   it('should render', () => {

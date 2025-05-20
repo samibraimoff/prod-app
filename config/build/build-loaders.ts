@@ -1,6 +1,7 @@
 import webpack from 'webpack';
-import { BuildOptions } from './types';
+
 import { buildCssLoader } from './build-loaders/build-css-loader';
+import { BuildOptions } from './types';
 
 export const buildLoaders = ({
   isDev,

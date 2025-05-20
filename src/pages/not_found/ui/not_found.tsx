@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/class-names/class-names';
+
 import classes from './not_found.module.scss';
 
 export const NotFoundPage = () => {

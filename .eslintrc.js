@@ -21,6 +21,7 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'i18next',
+    'simple-import-sort',
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
@@ -40,6 +41,8 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
     'max-len': ['error', { ignoreComments: true }, { code: 120 }],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
   globals: {
     __IS_DEV__: true,

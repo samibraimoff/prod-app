@@ -1,6 +1,7 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ThemeDecorator } from 'shared/config/storybook/decorators/theme';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Theme } from 'app/providers/theme';
+import { ThemeDecorator } from 'shared/config/storybook/decorators/theme';
+
 import Main from './main';
 
 export default {

@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react';
+
 import { ErrorBoundaryMessage } from './error-boundary-message';
 
 describe('ErrorBoundaryMessage', () => {

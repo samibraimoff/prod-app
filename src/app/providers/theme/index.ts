@@ -1,5 +1,5 @@
 import { useTheme } from './hooks/use-theme';
-import { ThemeProvider } from './ui/theme-provider';
 import { Theme } from './ui/theme-context';
+import { ThemeProvider } from './ui/theme-provider';
 
-export { useTheme, ThemeProvider, Theme };
+export { Theme, ThemeProvider, useTheme };

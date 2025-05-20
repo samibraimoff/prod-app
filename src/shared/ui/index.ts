@@ -1,7 +1,8 @@
+import { Button, ButtonSize, ButtonTheme } from './button/button';
 import { Link, LinkTheme } from './link/link';
-import { Button, ButtonTheme, ButtonSize } from './button/button';
 import { Loader } from './loader/loader';
+import { Modal } from './modal/modal';
 
 export {
-  Link, LinkTheme, Button, ButtonTheme, ButtonSize, Loader,
+  Button, ButtonSize, ButtonTheme, Link, LinkTheme, Loader, Modal,
 };

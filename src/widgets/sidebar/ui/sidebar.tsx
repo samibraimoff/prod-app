@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { LanguageSwitcher } from 'widgets/language-switcher';
-import { ThemeSwitcher } from 'widgets/theme-switcher';
+import AboutIcon from 'shared/assets/icons/about.svg';
+import MainIcon from 'shared/assets/icons/home.svg';
+import { RoutePath } from 'shared/config/router/router-config';
 import { classNames } from 'shared/lib/class-names/class-names';
 import {
   Button, ButtonSize, ButtonTheme, Link, LinkTheme,
 } from 'shared/ui';
-import { RoutePath } from 'shared/config/router/router-config';
-import AboutIcon from 'shared/assets/icons/about.svg';
-import MainIcon from 'shared/assets/icons/home.svg';
+import { LanguageSwitcher } from 'widgets/language-switcher';
+import { ThemeSwitcher } from 'widgets/theme-switcher';
+
 import classes from './sidebar.module.scss';
 
 interface SidebarProps {
