@@ -24,8 +24,7 @@ export function Navbar(props: NavbarProps) {
         {t('navbar.signIn')}
       </Button>
       <Modal isOpen={isAuthModal} onClose={handleToggleModal}>
-        {/* eslint-disable-next-line */}
-        adfasdf asfasdf asdf asf
+        {t('modalText')}
       </Modal>
     </div>
   );

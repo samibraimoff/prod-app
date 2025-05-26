@@ -9,7 +9,8 @@
     "link": "About"
   },
   "navbar": {
-    "signIn": "Sign in"
+    "signIn": "Sign in",
+    "modalText": "modalTextToBeDeleted"
   },
   "page_not_found_title": "404",
   "page_not_found_description": "Page not found, please reload the page.",
