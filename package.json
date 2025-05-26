@@ -19,7 +19,8 @@
     "test:ui:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "sb": "start-storybook -p 6006 -c ./config/storybook",
-    "build:sb": "build-storybook -c ./config/storybook"
+    "build:sb": "build-storybook -c ./config/storybook",
+    "ci:check": "npm run build:prod && npm run lint:ts && npm run lint:scss && npm run test:unit && npm run build:sb && npm run test:ui:ci"
   },
   "keywords": [],
   "author": "",
@@ -62,7 +63,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "file-loader": "^6.2.0",
     "identity-obj-proxy": "^3.0.0",

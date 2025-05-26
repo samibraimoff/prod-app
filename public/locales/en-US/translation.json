@@ -8,6 +8,9 @@
     "title": "About page",
     "link": "About"
   },
+  "navbar": {
+    "signIn": "Sign in"
+  },
   "page_not_found_title": "404",
   "page_not_found_description": "Page not found, please reload the page.",
   "errorMessage": "Something went wrong, please reload the page."

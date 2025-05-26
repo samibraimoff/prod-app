@@ -3,11 +3,14 @@
 @import "light";
 @import "dark";
 
-.app {
+body {
     font: var(--font-m);
+}
+
+.app {
+    min-height: 100vh;
     background: var(--bg);
     color: var(--text-primary);
-    min-height: 100vh;
 }
 
 .content {

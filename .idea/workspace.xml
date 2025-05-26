@@ -76,7 +76,7 @@
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "configurable.group.editor",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
     "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -186,7 +186,9 @@
       <workItem from="1747380939417" duration="9945000" />
       <workItem from="1747467441069" duration="643000" />
       <workItem from="1747468233584" duration="13261000" />
-      <workItem from="1747688675699" duration="5060000" />
+      <workItem from="1747688675699" duration="6658000" />
+      <workItem from="1747832890358" duration="516000" />
+      <workItem from="1747833439893" duration="4466000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
@@ -436,7 +438,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747472289554</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update linter and sort imports">
+      <option name="closed" value="true" />
+      <created>1747708320910</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1747708320910</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding scss modules" />
     <MESSAGE value="adding react router dom, adding pages, making it lazy load" />
     <MESSAGE value="adding light and dark theme, adding theme context and theme custom hook" />
     <MESSAGE value="adding classnames function to filter out classes" />
@@ -479,6 +488,7 @@
     <MESSAGE value="fix scss lint issue" />
     <MESSAGE value="delete failing test, needs a fix" />
     <MESSAGE value="add screenshot testing in ci" />
-    <option name="LAST_COMMIT_MESSAGE" value="add screenshot testing in ci" />
+    <MESSAGE value="update linter and sort imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="update linter and sort imports" />
   </component>
 </project>

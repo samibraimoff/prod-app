@@ -22,6 +22,7 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
     'simple-import-sort',
+    'react-hooks',
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
@@ -43,13 +44,15 @@ module.exports = {
     'max-len': ['error', { ignoreComments: true }, { code: 120 }],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
   globals: {
     __IS_DEV__: true,
   },
   overrides: [
     {
-      files: ['**/src/**/*.test.{ts,tsx}'],
+      files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
       rules: {
         'i18next/no-literal-string': 'off',
       },

@@ -1,4 +1,5 @@
 import 'shared/config/i18n/i18n';
+import 'app/styles/index.scss';
 
 import { ErrorBoundary } from 'app/providers/error-boundary';
 import { ThemeProvider } from 'app/providers/theme';
