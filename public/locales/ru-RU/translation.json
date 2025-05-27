@@ -2,7 +2,9 @@
   "language": "En",
   "main": {
     "title": "Главная страница",
-    "link": "Главная"
+    "link": "Главная",
+    "increamentBtn": "Увеличить",
+    "decreamentBtn": "Уменшить"
   },
   "about": {
     "title": "О компании",

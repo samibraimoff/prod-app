@@ -44,6 +44,9 @@ export default {
     '\\.(css|scss)$': 'identity-obj-proxy',
     '\\.svg': path.resolve(__dirname, 'jest-empty-component.tsx'),
   },
+  globals: {
+    __IS_DEV__: true,
+  },
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
@@ -92,8 +95,7 @@ export default {
   // function that is triggered once after all test suites
   // globalTeardown: undefined,
 
-  // A set of global variables that need to be available in all test environments
-  // globals: {},
+  // A set of global variables that need to be available in all test environment
 
   // The maximum amount of workers used to run your tests.
   // Can be specified as % or a number. E.g. maxWorkers: 10% will use
