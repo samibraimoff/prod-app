@@ -4,7 +4,7 @@ function Main() {
   const { t } = useTranslation();
   return (
     <div>
-      <h2>{t('main.title')}</h2>
+      <h2>{t('pages.main.title')}</h2>
     </div>
   );
 }

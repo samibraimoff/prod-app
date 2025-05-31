@@ -1,20 +1,29 @@
 {
+  "pages": {
+    "main": {
+      "title": "Main page",
+      "link": "Main",
+      "increamentBtn": "Increament",
+      "decreamentBtn": "Decreament"
+    },
+    "about": {
+      "title": "About page",
+      "link": "About"
+    },
+    "page_not_found_title": "404",
+    "page_not_found_description": "Page not found, please reload the page."
+  },
+  "shared": {},
+  "entitities": {},
+  "widgets": {
+    "navbar": {
+      "signIn": "Sign in",
+      "modalText": "modalTextToBeDeleted"
+    }
+  },
+  "features": {
+    "signIn": "Sign In"
+  },
   "language": "Ru",
-  "main": {
-    "title": "Main page",
-    "link": "Main",
-    "increamentBtn": "Increament",
-    "decreamentBtn": "Decreament"
-  },
-  "about": {
-    "title": "About page",
-    "link": "About"
-  },
-  "navbar": {
-    "signIn": "Sign in",
-    "modalText": "modalTextToBeDeleted"
-  },
-  "page_not_found_title": "404",
-  "page_not_found_description": "Page not found, please reload the page.",
   "errorMessage": "Something went wrong, please reload the page."
 }

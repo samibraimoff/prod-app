@@ -7,8 +7,8 @@ export const NotFoundPage = () => {
   const { t } = useTranslation();
   return (
     <div className={classNames(classes['not-found'], {}, [])}>
-      <h2 className={classes.title}>{t('page_not_found_title')}</h2>
-      <p className={classes.desciption}>{t('page_not_found_description')}</p>
+      <h2 className={classes.title}>{t('pages.page_not_found_title')}</h2>
+      <p className={classes.desciption}>{t('pages.page_not_found_description')}</p>
     </div>
   );
 };

@@ -1,3 +1,1 @@
-import { MainAsync as Main } from './ui/main.lazy';
-
-export { Main };
+export { MainAsync as Main } from './ui/main.lazy';

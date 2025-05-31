@@ -1,3 +1,1 @@
-import { AboutAsync as About } from './ui/about.lazy';
-
-export { About };
+export { AboutAsync as About } from './ui/about.lazy';

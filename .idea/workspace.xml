@@ -76,8 +76,8 @@
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
+    "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -93,11 +93,11 @@
       <recent name="$PROJECT_DIR$/src/pages/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/entities/counter/model/selectors/get-counter" />
+      <recent name="$PROJECT_DIR$/src/entities/counter/model/selectors/get-counter-value" />
       <recent name="$PROJECT_DIR$/config/jest" />
       <recent name="$PROJECT_DIR$/src/shared/assets/icons" />
       <recent name="$PROJECT_DIR$/src/pages/main/ui" />
-      <recent name="$PROJECT_DIR$/src/pages/about/ui" />
-      <recent name="$PROJECT_DIR$/src/shared" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.LanguageSwitcher">
@@ -190,6 +190,7 @@
       <workItem from="1747832890358" duration="516000" />
       <workItem from="1747833439893" duration="4466000" />
       <workItem from="1748322003636" duration="3241000" />
+      <workItem from="1748415804107" duration="5269000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />

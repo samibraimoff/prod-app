@@ -1,3 +1,1 @@
-import { ErrorBoundaryMessage } from './ui/error-boundary-message';
-
-export { ErrorBoundaryMessage };
+export { ErrorBoundaryMessage } from './ui/error-boundary-message';

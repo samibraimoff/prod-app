@@ -41,7 +41,7 @@ export function Sidebar(props: SidebarProps) {
           className={classes.link}
         >
           <MainIcon className={classes.icon} />
-          <span className={classes['link-text']}>{t('main.link')}</span>
+          <span className={classes['link-text']}>{t('pages.main.link')}</span>
         </Link>
         <Link
           theme={LinkTheme.PRIMARY}
@@ -49,7 +49,7 @@ export function Sidebar(props: SidebarProps) {
           className={classes.link}
         >
           <AboutIcon className={classes.icon} />
-          <span className={classes['link-text']}>{t('about.link')}</span>
+          <span className={classes['link-text']}>{t('pages.about.link')}</span>
         </Link>
       </div>
       <Button

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/class-names/class-names';
 import { Button } from 'shared/ui';
 
-import { getCounterValue } from '../model/selectors/get-counter-value';
+import { getCounterValue } from '../model/selectors/get-counter-value/get-counter-value';
 import { counterActions } from '../model/slice/counter-slice';
 import classes from './counter.module.scss';
 
@@ -27,8 +27,8 @@ export const Counter = (props: CounterProps) => {
   return (
     <div className={classNames(classes.counter, {}, [className])}>
       <h1 data-testid="value-title">{value}</h1>
-      <Button data-testid="increament-btn" onClick={onIncrement}>{t('main.increamentBtn')}</Button>
-      <Button data-testid="decreament-btn" onClick={onDecrement}>{t('main.decreamentBtn')}</Button>
+      <Button data-testid="increament-btn" onClick={onIncrement}>{t('pages.main.increamentBtn')}</Button>
+      <Button data-testid="decreament-btn" onClick={onDecrement}>{t('pages.main.decreamentBtn')}</Button>
     </div>
   );
 };
