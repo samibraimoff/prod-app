@@ -6,6 +6,7 @@ const server = jsonServer.create();
 
 const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
 server.use(jsonServer.bodyParser);
+server.use(jsonServer.defaults());
 
 server.use(async (req, res, next) => {
   await new Promise((res) => {
@@ -22,9 +23,6 @@ server.use((req, res, next) => {
   next();
 });
 
-server.use(jsonServer.defaults());
-server.use(router);
-
 server.post('/login', (req, res) => {
   try {
     const { username, password } = req.body;
@@ -40,6 +38,8 @@ server.post('/login', (req, res) => {
     return res.status(500).json({ message: error.message });
   }
 });
+
+server.use(router);
 
 server.listen(8080, () => {
   // eslint-disable-next-line no-console
