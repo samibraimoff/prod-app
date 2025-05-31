@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { classNames } from 'shared/lib/class-names/class-names';
+import { classNames } from 'shared/lib';
 import { Button } from 'shared/ui';
 
 import { getCounterValue } from '../model/selectors/get-counter-value/get-counter-value';

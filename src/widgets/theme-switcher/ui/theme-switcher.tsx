@@ -1,7 +1,7 @@
 import { Theme, useTheme } from 'app/providers/theme';
 import DarkIcon from 'shared/assets/icons/dark.svg';
 import LightIcon from 'shared/assets/icons/light.svg';
-import { classNames } from 'shared/lib/class-names/class-names';
+import { classNames } from 'shared/lib';
 import { Button, ButtonTheme } from 'shared/ui';
 
 import classes from './theme-switcher.module.scss';

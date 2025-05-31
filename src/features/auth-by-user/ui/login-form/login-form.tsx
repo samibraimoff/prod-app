@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/class-names/class-names';
-import { Button } from 'shared/ui';
+import { classNames } from 'shared/lib';
+import { Button, ButtonTheme } from 'shared/ui';
 
 import classes from './login-form.module.scss';
 
@@ -15,7 +15,7 @@ export const LoginForm = (props: LoginFormProps) => {
     <div className={classNames(classes.loginForm, {}, [className])}>
       <input type="text" placeholder="Name" />
       <input type="password" placeholder="Password" />
-      <Button>{t('features.singIn')}</Button>
+      <Button theme={ButtonTheme.CLEAR}>{t('features.singIn')}</Button>
     </div>
   );
 };

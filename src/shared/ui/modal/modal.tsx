@@ -2,7 +2,7 @@ import React, {
   ReactNode, useCallback,
   useEffect, useRef, useState,
 } from 'react';
-import { classNames } from 'shared/lib/class-names/class-names';
+import { classNames } from 'shared/lib';
 import { Portal } from 'shared/ui';
 
 import classes from './modal.module.scss';

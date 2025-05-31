@@ -1,7 +1,7 @@
 import { LoginModal } from 'features/auth-by-user';
 import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/class-names/class-names';
+import { classNames } from 'shared/lib';
 import { Button, ButtonTheme } from 'shared/ui';
 
 import classes from './navbar.module.scss';
@@ -15,16 +15,20 @@ export function Navbar(props: NavbarProps) {
   const { t } = useTranslation();
   const [isAuthModal, setIsAuthModal] = useState(false);
 
-  const handleToggleModal = useCallback(() => {
-    setIsAuthModal((prevState) => !prevState);
+  const handleOnCloseModal = useCallback(() => {
+    setIsAuthModal(false);
+  }, []);
+
+  const handleOnOpenModal = useCallback(() => {
+    setIsAuthModal(true);
   }, []);
 
   return (
     <div className={classNames(classes.navbar, {}, [className])}>
-      <Button theme={ButtonTheme.CLEAR} className={classes.links} onClick={handleToggleModal}>
+      <Button theme={ButtonTheme.CLEAR} className={classes.links} onClick={handleOnOpenModal}>
         {t('widgets.navbar.signIn')}
       </Button>
-      <LoginModal isOpen={isAuthModal} onClose={() => setIsAuthModal(false)} />
+      <LoginModal isOpen={isAuthModal} onClose={handleOnCloseModal} />
     </div>
   );
 }

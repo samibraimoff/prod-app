@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import AboutIcon from 'shared/assets/icons/about.svg';
 import MainIcon from 'shared/assets/icons/home.svg';
 import { RoutePath } from 'shared/config/router/router-config';
-import { classNames } from 'shared/lib/class-names/class-names';
+import { classNames } from 'shared/lib';
 import {
   Button, ButtonSize, ButtonTheme, Link, LinkTheme,
 } from 'shared/ui';

@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/class-names/class-names';
+import { classNames } from 'shared/lib';
 import { Modal } from 'shared/ui';
 
 import { LoginForm } from '../login-form/login-form';
