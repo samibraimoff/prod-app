@@ -5,7 +5,6 @@ const path = require('path');
 const server = jsonServer.create();
 
 const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
-server.use(jsonServer.defaults());
 server.use(jsonServer.bodyParser);
 
 server.use(async (req, res, next) => {
@@ -14,6 +13,17 @@ server.use(async (req, res, next) => {
   });
   next();
 });
+
+// eslint-disable-next-lines consistent-return
+server.use((req, res, next) => {
+  if (!req.headers.authorization) {
+    return res.status(403).json({ message: 'No token provided' });
+  }
+  next();
+});
+
+server.use(jsonServer.defaults());
+server.use(router);
 
 server.post('/login', (req, res) => {
   try {
@@ -27,21 +37,9 @@ server.post('/login', (req, res) => {
 
     return res.status(403).json({ message: 'User not found' });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({ message: error.message });
   }
 });
-
-// eslint-disable-next-lines consistent-return
-server.use((req, res, next) => {
-  if (!req.headers.authorization) {
-    console.log(req.headers);
-    return res.status(403).json({ message: 'No token provided' });
-  }
-  next();
-});
-
-server.use(router);
 
 server.listen(8080, () => {
   // eslint-disable-next-line no-console
