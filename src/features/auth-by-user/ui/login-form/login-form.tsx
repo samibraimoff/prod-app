@@ -15,7 +15,7 @@ export const LoginForm = (props: LoginFormProps) => {
     <div className={classNames(classes.loginForm, {}, [className])}>
       <Input autofocus type="text" placeholder={t('widgets.navbar.enterUsername')} className={classes.input} />
       <Input type="password" placeholder={t('widgets.navbar.enterPassword')} className={classes.input} />
-      <Button theme={ButtonTheme.CLEAR} className={classes.loginBtn}>{t('features.singIn')}</Button>
+      <Button theme={ButtonTheme.CLEAR} className={classes.loginBtn}>{t('features.signIn')}</Button>
     </div>
   );
 };
