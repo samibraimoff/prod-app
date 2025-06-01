@@ -1,31 +1,29 @@
-import i18n from 'i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import Backend from 'i18next-http-backend';
+import { createInstance } from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import enUs from '../../public/locales/en-US/translation.json';
-import ruRU from '../../public/locales/ru-RU/translation.json';
+import enUs from '../../public/locales/en/translation.json';
+import ruRu from '../../public/locales/ru/translation.json';
 
-i18n
-  .use(Backend)
-  .use(LanguageDetector)
+const i18nStorybook = createInstance();
+
+i18nStorybook
   .use(initReactI18next)
   .init({
     resources: {
-      'en-US': {
+      en: {
         translation: enUs,
       },
-      'ru-RU': {
-        translation: ruRU,
+      ru: {
+        translation: ruRu,
       },
     },
-    lng: 'en-US',
-    fallbackLng: 'en-US',
+    lng: 'en',
+    fallbackLng: 'en',
     debug: false,
     react: { useSuspense: false },
     interpolation: { escapeValue: false },
-    supportedLngs: ['en-US', 'ru-RU'],
+    supportedLngs: ['en', 'ru'],
     load: 'currentOnly',
   });
 
-export default i18n;
+export default i18nStorybook;

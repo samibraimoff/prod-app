@@ -59,6 +59,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.bundle.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
@@ -76,7 +77,7 @@
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -93,11 +94,11 @@
       <recent name="$PROJECT_DIR$/src/pages/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/entities/counter/model/selectors/get-counter" />
       <recent name="$PROJECT_DIR$/src/entities/counter/model/selectors/get-counter-value" />
       <recent name="$PROJECT_DIR$/config/jest" />
       <recent name="$PROJECT_DIR$/src/shared/assets/icons" />
-      <recent name="$PROJECT_DIR$/src/pages/main/ui" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.LanguageSwitcher">
@@ -150,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.LanguageSwitcher" />
-        <item itemvalue="Jest.classNames" />
         <item itemvalue="npm.build:prod" />
         <item itemvalue="npm.build:dev" />
         <item itemvalue="Node.js.bundle.js" />
+        <item itemvalue="Jest.classNames" />
+        <item itemvalue="Jest.LanguageSwitcher" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +192,7 @@
       <workItem from="1747833439893" duration="4466000" />
       <workItem from="1748322003636" duration="3241000" />
       <workItem from="1748415804107" duration="5269000" />
+      <workItem from="1748751234050" duration="2863000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />
