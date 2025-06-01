@@ -18,7 +18,9 @@
   "widgets": {
     "navbar": {
       "signIn": "Sign in",
-      "modalText": "modalTextToBeDeleted"
+      "modalText": "modalTextToBeDeleted",
+      "enterUsername": "Enter username",
+      "enterPassword": "Enter password"
     }
   },
   "features": {

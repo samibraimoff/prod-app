@@ -1,7 +1,5 @@
 import { classNames } from 'shared/lib';
 
-import classes from './user.module.scss';
-
 interface UserProps {
     className?: string;
 }
@@ -9,7 +7,7 @@ interface UserProps {
 export const User = (props: UserProps) => {
   const { className } = props;
   return (
-    <div className={classNames(classes.user, {}, [className])}>
+    <div className={classNames('', {}, [className])}>
       {/* <LoginModal /> */}
     </div>
   );
