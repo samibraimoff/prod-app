@@ -18,13 +18,16 @@
   "widgets": {
     "navbar": {
       "signIn": "Sign in",
+      "signOut": "Log out",
       "modalText": "modalTextToBeDeleted",
       "enterUsername": "Enter username",
       "enterPassword": "Enter password"
     }
   },
   "features": {
-    "signIn": "Sign In"
+    "signIn": "Sign In",
+    "loginForm": "Login form",
+    "apiErrorMessage": "Error while entering login or password."
   },
   "language": "Ru",
   "errorMessage": "Something went wrong, please reload the page."

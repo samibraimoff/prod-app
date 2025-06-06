@@ -18,13 +18,17 @@
   "widgets": {
     "navbar": {
       "signIn": "Войти",
+      "signOut": "Выйти",
       "modalText": "modalTextToBeDeleted",
       "enterUsername": "Введите логин",
       "enterPassword": "Введите пароль"
     }
   },
   "features": {
-    "signIn": "Войти"
+    "signIn": "Войти",
+    "loginForm": "Форма авторизации",
+    "apiErrorMessage": "Вы ввели неверный логин или пароль."
+
   },
   "language": "En",
   "errorMessage": "Произошла ошибка, попробуйте перегрузить страницу."

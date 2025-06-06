@@ -52,6 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JavaScript Debug.localhost:6006.executor": "Debug",
     "Jest.LanguageSwitcher.executor": "Run",
     "Jest.classNames.executor": "Run",
     "Jest.classNames.should return correct class names.executor": "Run",
@@ -77,7 +78,7 @@
     "npm.build:dev.executor": "Run",
     "npm.build:prod.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "/Users/sandibekibraimov/Projects/prod-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "ts.external.directory.path": "/Users/sandibekibraimov/Projects/prod-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -101,19 +102,7 @@
       <recent name="$PROJECT_DIR$/src/shared/assets/icons" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.LanguageSwitcher">
-    <configuration name="LanguageSwitcher" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/widgets/language-switcher/ui/language-switcher.test.tsx" />
-      <test-names>
-        <test-name value="LanguageSwitcher" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.localhost:6006">
     <configuration name="classNames" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -124,6 +113,9 @@
       <test-names>
         <test-name value="classNames" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="localhost:6006" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:6006/">
       <method v="2" />
     </configuration>
     <configuration name="bundle.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/dist/bundle.js" working-dir="$PROJECT_DIR$/dist">
@@ -151,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.localhost:6006" />
         <item itemvalue="npm.build:prod" />
         <item itemvalue="npm.build:dev" />
         <item itemvalue="Node.js.bundle.js" />
         <item itemvalue="Jest.classNames" />
-        <item itemvalue="Jest.LanguageSwitcher" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +185,8 @@
       <workItem from="1748322003636" duration="3241000" />
       <workItem from="1748415804107" duration="5269000" />
       <workItem from="1748751234050" duration="2863000" />
+      <workItem from="1748796828853" duration="195000" />
+      <workItem from="1748797032702" duration="1240000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, project setup">
       <option name="closed" value="true" />

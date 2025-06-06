@@ -1,5 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Theme } from 'app/providers/theme';
+import { StoreDecorator } from 'shared/config/storybook/decorators/store';
 import { ThemeDecorator } from 'shared/config/storybook/decorators/theme';
 
 import { Navbar } from './navbar';
@@ -14,7 +15,16 @@ export default {
 
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
-export const Light = Template.bind({});
+export const GuestLight = Template.bind({});
+GuestLight.decorators = [StoreDecorator({})];
 
-export const Dark = Template.bind({});
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+export const AuthDark = Template.bind({});
+AuthDark.decorators = [
+  ThemeDecorator(Theme.DARK),
+  StoreDecorator({
+    user: {
+      authData: {
+        username: 'admin',
+      },
+    },
+  })];

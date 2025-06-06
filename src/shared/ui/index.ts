@@ -4,3 +4,4 @@ export { Link, LinkTheme } from './link/link';
 export { Loader } from './loader/loader';
 export { Modal } from './modal/modal';
 export { Portal } from './portal/portal';
+export { Text, TextTheme } from './text/text';
