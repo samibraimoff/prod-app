@@ -54,10 +54,12 @@ export function Navbar(props: NavbarProps) {
       >
         {t('widgets.navbar.signIn')}
       </Button>
-      <LoginModal
-        isOpen={isAuthModal}
-        onClose={handleOnCloseModal}
-      />
+      {isAuthModal && (
+        <LoginModal
+          isOpen={isAuthModal}
+          onClose={handleOnCloseModal}
+        />
+      )}
     </div>
   );
 }

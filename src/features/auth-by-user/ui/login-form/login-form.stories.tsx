@@ -3,7 +3,7 @@ import { Theme } from 'app/providers/theme';
 import { StoreDecorator } from 'shared/config/storybook/decorators/store';
 import { ThemeDecorator } from 'shared/config/storybook/decorators/theme';
 
-import { LoginForm } from './login-form';
+import LoginForm from './login-form';
 
 export default {
   title: 'features/LoginForm',
