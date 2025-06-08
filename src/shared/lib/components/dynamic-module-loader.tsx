@@ -3,9 +3,8 @@ import { ReduxStoreWithManager, StateSchemaKey } from 'app/providers/store';
 import { FC, useEffect } from 'react';
 import { useDispatch, useStore } from 'react-redux';
 
-export interface ReducerList {
-    // @ts-ignore
-    [name in StateSchemaKey]?: Reducer
+export type ReducerList = {
+  [name in StateSchemaKey]?: Reducer
 }
 
 type ReducersListEntry = [StateSchemaKey, Reducer];
@@ -23,18 +22,18 @@ export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    Object.entries(reducers).forEach(([name, reducer]: ReducersListEntry) => {
-      store.reducerManager.add(name, reducer);
+    Object.entries(reducers).forEach(([keyName, reducer]: ReducersListEntry) => {
+      store.reducerManager.add(keyName, reducer);
       dispatch({
-        type: `@INIT ${name}`,
+        type: `@INIT ${keyName}`,
       });
     });
 
     return () => {
       if (removeAfterUnmount) {
-        Object.entries(reducers).forEach(([name]: ReducersListEntry) => {
-          store.reducerManager.remove(name);
-          dispatch({ type: `@DESTROY ${name}` });
+        Object.entries(reducers).forEach(([keyName]: ReducersListEntry) => {
+          store.reducerManager.remove(keyName);
+          dispatch({ type: `@DESTROY ${keyName}` });
         });
       }
     };
