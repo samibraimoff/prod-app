@@ -1,0 +1,9 @@
+:root {
+  --font-family: Open-Sans, sans-serif;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+  --font-height-medium: 24px;
+  --font-height-large: 32px;
+  --font-medium: var(--font-size-medium) / var(--font-height-medium) var(--font-family);
+  --font-large: var(--font-size-large) / var(--font-height-large) var(--font-family);
+}
