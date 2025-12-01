@@ -1,4 +1,4 @@
-import { cssClassNames } from "../../helpers/class-names/css-class-names";
+import { cssClassNames } from "../../../shared/helpers/class-names/css-class-names";
 
 const About = () => {
   return (

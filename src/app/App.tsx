@@ -1,11 +1,11 @@
 import { Suspense } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
-import { About } from "./pages/about/About-Async";
-import { Home } from "./pages/home/Home-Async";
-import { useTheme } from "./theme/use-theme";
+import { About } from "pages/about";
+import { Home } from "pages/home";
+import { useTheme } from "app/providers/theme";
 
-import { cssClassNames } from "./helpers/class-names/css-class-names";
+import { cssClassNames } from "shared/helpers/class-names/css-class-names";
 
 export const App = () => {
   const { theme, toggleTheme } = useTheme();
