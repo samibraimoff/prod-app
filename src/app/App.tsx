@@ -1,25 +1,22 @@
-import { Suspense } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { AppRouter } from "app/providers/router";
+import { Navbar } from "widgets/navbar";
 
-import { About } from "pages/about";
-import { Home } from "pages/home";
 import { useTheme } from "app/providers/theme";
-
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+import { Sidebar } from "widgets/sidebar";
+import { Suspense } from "react";
 
 export const App = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className={cssClassNames("app", {}, [theme])}>
-      <Link to="/about">About</Link>
-      <Link to="/">Home</Link>
-      <button onClick={toggleTheme}>theme</button>
       <Suspense fallback={"loading..."}>
-        <Routes>
-          <Route path={"/"} element={<Home />} />
-          <Route path={"/about"} element={<About />} />
-        </Routes>
+        <Navbar />
+        <div className="content-page">
+          <Sidebar />
+          <AppRouter />
+        </div>
       </Suspense>
     </div>
   );
