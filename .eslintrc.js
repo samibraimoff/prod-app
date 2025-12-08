@@ -1,21 +1,22 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    jest: true,
   },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:i18next/recommended"
+    "plugin:i18next/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint", "i18next"],
   rules: {
@@ -24,7 +25,7 @@ module.exports = {
     indent: [2, 2],
     "react/jsx-filename-extension": [
       2,
-      { extensions: [".js", ".jsx", ".tsx"] }
+      { extensions: [".js", ".jsx", ".tsx", ".ts"] },
     ],
     "react/jsx-props-no-spreading": "warn",
     "react/react-in-jsx-scope": "off",
@@ -34,6 +35,6 @@ module.exports = {
     "import/prefer-default-export": "off",
     "no-unused-vars": "warn",
     "no-shadow": "off",
-    "i18next/no-literal-string": ["error", { markupOnly: true }]
-  }
+    "i18next/no-literal-string": ["error", { markupOnly: true }],
+  },
 };
