@@ -17,6 +17,7 @@ export const Button: FC<ButtonProps> = (props) => {
 
   return (
     <button
+      type="submit"
       className={cssClassNames(styles.button, {}, [className, styles[theme]])}
       {...rest}
     >

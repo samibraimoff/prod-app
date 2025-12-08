@@ -13,7 +13,7 @@ export const ThemeProvider: FC = ({ children }) => {
 
   const defaultValues = useMemo(
     () => ({ theme: theme, setTheme: setTheme }),
-    [theme],
+    [theme]
   );
 
   return (
