@@ -16,7 +16,7 @@ export const LanguageSwitcher = (props: LanguageSwitcherProps) => {
     i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
   };
   return (
-    <div className={cssClassNames(styles.languageSwitcher, {}, [className])}>
+    <div className={cssClassNames("", {}, [className])}>
       <Button
         theme={ThemeButton.CLEAR}
         onClick={toggleLang}
