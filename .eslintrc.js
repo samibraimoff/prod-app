@@ -36,5 +36,6 @@ module.exports = {
     "no-unused-vars": "warn",
     "no-shadow": "off",
     "i18next/no-literal-string": ["error", { markupOnly: true }],
+    "max-len": ["error", { code: 130, ignoreComments: true }],
   },
 };
