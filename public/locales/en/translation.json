@@ -3,5 +3,9 @@
   "navlinks": {
     "home": "Home",
     "about": "About"
+  },
+  "notFoundPage": {
+    "title": "404 - Page not found",
+    "text": "The page you are looking for does not exist."
   }
 }
