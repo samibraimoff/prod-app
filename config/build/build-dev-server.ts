@@ -8,6 +8,9 @@ export const buildDevServer = (
     hot: true,
     port: options.port,
     open: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    client: {
+      overlay: false,
+    },
   };
 };

@@ -1,0 +1,1 @@
+export { PageWithErrorMessage } from "./ui/page-with-error-message";
