@@ -13,7 +13,11 @@ export default {
   },
 } as ComponentMeta<typeof About>;
 
-const Template: ComponentStory<typeof About> = (args) => <About {...args} />;
+const Template: ComponentStory<typeof About> = (args) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading, @typescript-eslint/ban-ts-comment
+  // @ts-ignore - Storybook args are always an object
+  <About {...args} />
+);
 
 export const AboutLight = Template.bind({});
 AboutLight.args = {};

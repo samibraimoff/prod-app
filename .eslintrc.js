@@ -48,5 +48,11 @@ module.exports = {
         "i18next/no-literal-string": "off",
       },
     },
+    {
+      files: ["*.stories.@(ts|tsx|js|jsx)"],
+      rules: {
+        "react/jsx-props-no-spreading": "off",
+      },
+    },
   ],
 };

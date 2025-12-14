@@ -14,6 +14,8 @@ export default {
 } as ComponentMeta<typeof PageLoader>;
 
 const Template: ComponentStory<typeof PageLoader> = (args) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading, @typescript-eslint/ban-ts-comment
+  // @ts-ignore - Storybook args are always an object
   <PageLoader {...args} />
 );
 

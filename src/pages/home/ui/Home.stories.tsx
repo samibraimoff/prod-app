@@ -13,7 +13,11 @@ export default {
   },
 } as ComponentMeta<typeof Home>;
 
-const Template: ComponentStory<typeof Home> = (args) => <Home {...args} />;
+const Template: ComponentStory<typeof Home> = (args) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading, @typescript-eslint/ban-ts-comment
+  // @ts-ignore - Storybook args are always an object
+  <Home {...args} />
+);
 
 export const HomeLight = Template.bind({});
 HomeLight.args = {};
