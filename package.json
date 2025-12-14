@@ -10,7 +10,9 @@
     "lint:ts:fix": "eslint './src/**/*.{ts,tsx}' --fix",
     "lint:scss": "npx stylelint 'src/**/*.scss'",
     "lint:scss:fix": "npx stylelint 'src/**/*.scss' --fix",
-    "test": "jest --config ./config/jest/jest.config.ts",
+    "test:unit": "jest --config ./config/jest/jest.config.ts",
+    "test:ui": "npx loki test",
+    "test:ui:approve": "npx loki approve",
     "sb": "start-storybook dev -p 6006 -c ./config/storybook",
     "build-sb": "build-storybook -c ./config/storybook"
   },
