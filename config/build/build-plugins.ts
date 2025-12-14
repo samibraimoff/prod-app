@@ -12,7 +12,7 @@ import { BuildOptions } from "./types";
 export const buildPlugins = (
   options: BuildOptions,
 ): WebpackPluginInstance[] => {
-  return [
+  const plugins = [
     new HTMLWebpackPlugin({
       template: options.paths.html,
     }),
@@ -24,9 +24,14 @@ export const buildPlugins = (
     new DefinePlugin({
       __IS_DEV__: JSON.stringify(options.isDev),
     }),
-    new HotModuleReplacementPlugin(),
-    new BundleAnalyzerPlugin({
-      openAnalyzer: false
-    })
   ];
+
+  if (options.isDev) {
+    plugins.push(new HotModuleReplacementPlugin());
+    plugins.push(new BundleAnalyzerPlugin({
+      openAnalyzer: false
+    }));
+  }
+
+  return plugins;
 };
