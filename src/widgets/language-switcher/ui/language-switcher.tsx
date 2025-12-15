@@ -13,7 +13,7 @@ export const LanguageSwitcher = (props: LanguageSwitcherProps) => {
   const { t, i18n } = useTranslation("translation");
 
   const toggleLang = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
+    void i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
   };
   return (
     <div className={cssClassNames("", {}, [className])}>
