@@ -1,19 +1,19 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
 }
 
 .title {
-  font: var(--font-large);
-  color: vaR(--primary-color);
-  margin-bottom: 16px;
+    font: var(--font-large);
+    color: var(--primary-color);
+    margin-bottom: 16px;
 }
 
 .text {
-  font: (--font-medium);
-  color: var(--secondary-color);
+    font: (--font-medium);
+    color: var(--secondary-color);
 }

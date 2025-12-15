@@ -1,12 +1,12 @@
 .pageWithErrorMessage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--bg-color);
 }
 
 .text {
-  color: var(--primary-color);
-  font: var(--font-large);
+    color: var(--primary-color);
+    font: var(--font-large);
 }
