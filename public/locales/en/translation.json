@@ -1,5 +1,6 @@
 {
-  "language": "Ru",
+  "language": "Russian",
+  "short_language": "Ru",
   "navlinks": {
     "home": "Home",
     "about": "About"
@@ -10,8 +11,5 @@
   },
   "errorMessage": {
     "text": "Something went wrong. Please try again later."
-  },
-  "sidebar": {
-    "toggle": "Toggle"
   }
 }

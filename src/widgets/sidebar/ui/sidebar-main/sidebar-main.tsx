@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
 
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
-import styles from "./sidebar-main.module.scss";
-import { ThemeSwitcher } from "widgets/theme-switcher";
+import { Button, ButtonTheme } from "shared/ui-kit";
+import { ButtonSize } from "shared/ui-kit/button/button";
 import { LanguageSwitcher } from "widgets/language-switcher";
+import { ThemeSwitcher } from "widgets/theme-switcher";
+import styles from "./sidebar-main.module.scss";
 
 interface SidebarProps {
   className?: string;
@@ -12,7 +13,6 @@ interface SidebarProps {
 
 export const Sidebar = (props: SidebarProps) => {
   const { className } = props;
-  const { t } = useTranslation();
   const [collapsed, setCollapsed] = useState(false);
 
   const toggleSidebar = () => {
@@ -28,12 +28,19 @@ export const Sidebar = (props: SidebarProps) => {
         [className]
       )}
     >
+      <Button
+        data-testid="sidebar-toggle"
+        onClick={toggleSidebar}
+        className={styles.collapseButton}
+        theme={ButtonTheme.BACKGROUND}
+        square
+        size={ButtonSize.L}
+      >
+        {collapsed ? ">" : "<"}
+      </Button>
       <div className={styles.switchers}>
-        <button data-testid="sidebar-toggle" onClick={toggleSidebar}>
-          {t("sidebar.toggle")}
-        </button>
         <ThemeSwitcher />
-        <LanguageSwitcher />
+        <LanguageSwitcher short={collapsed} />
       </div>
     </div>
   );

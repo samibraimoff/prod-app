@@ -1,5 +1,6 @@
 {
-  "language": "En",
+  "language": "English",
+  "short_language": "En",
   "navlinks": {
     "home": "Главная",
     "about": "О нас"
@@ -10,8 +11,5 @@
   },
   "errorMessage": {
     "text": "Что-то пошло не так. Пожалуйста, попробуйте позже."
-  },
-  "sidebar": {
-    "toggle": "Toggle"
   }
 }
