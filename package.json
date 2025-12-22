@@ -13,6 +13,9 @@
     "test:unit": "jest --config ./config/jest/jest.config.ts",
     "test:ui": "npx loki test",
     "test:ui:approve": "npx loki approve",
+    "test:ui:report": "npm run test:ui:json && npm run test:ui:html",
+    "test:ui:json": "node scripts/generate-visual-json-report.js",
+    "test:ui:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "test:ui:ci": "npx loki --requireReference --reactUri file:./storybook-static",
     "sb": "start-storybook dev -p 6006 -c ./config/storybook",
     "build-sb": "build-storybook -c ./config/storybook"
@@ -74,6 +77,7 @@
     "mini-css-extract-plugin": "^2.5.3",
     "prettier": "^3.7.3",
     "react-docgen-typescript-plugin": "^1.0.8",
+    "reg-cli": "^0.17.6",
     "regenerator-runtime": "^0.13.9",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
