@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
 import styles from "./navbar.module.scss";
 
@@ -8,7 +7,6 @@ interface NavbarProps {
 
 export const Navbar = (props: NavbarProps) => {
   const { classNames } = props;
-  const { t } = useTranslation("translation");
 
   return (
     <div className={cssClassNames(styles.navbar, {}, [classNames])}>
