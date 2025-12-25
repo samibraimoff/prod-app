@@ -11,7 +11,8 @@ export interface ComponentRenderProps {
 export const componentRender = (component: ReactNode, options: ComponentRenderProps = {}) => {
   const { route = "/" } = options;
   return render(<MemoryRouter initialEntries={[route]}>
-    <I18nextProvider i18n={i18nTest}>{component}</I18nextProvider>
-  </MemoryRouter>
-  );
+    <I18nextProvider i18n={i18nTest}>
+      {component}
+    </I18nextProvider>
+  </MemoryRouter>);
 };
