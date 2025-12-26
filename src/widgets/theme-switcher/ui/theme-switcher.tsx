@@ -20,9 +20,9 @@ export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
       theme={ButtonTheme.CLEAR}
     >
       {theme === Theme.DARK ? (
-        <DarkTheme width={24} height={24} />
+        <DarkTheme width={24} height={24} className={styles.icons} />
       ) : (
-        <LightTheme width={24} height={24} />
+        <LightTheme width={24} height={24} className={styles.icons} />
       )}
     </Button>
   );
