@@ -5,6 +5,9 @@
     "home": "Home",
     "about": "About"
   },
+  "navbar": {
+    "signIn": "Sign In"
+  },
   "notFoundPage": {
     "title": "404 - Page not found",
     "text": "The page you are looking for does not exist."
