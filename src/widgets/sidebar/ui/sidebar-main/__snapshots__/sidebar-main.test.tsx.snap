@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sidebar main should render sidebar main component 1`] = `
+<div
+  class="sidebar"
+  data-testid="sidebar"
+>
+  <div
+    class="links"
+  >
+    <a
+      class="appLink item primary"
+      href="/"
+    >
+      <svg
+        class="icon"
+      />
+      <span
+        class="link"
+      >
+        navlinks.home
+      </span>
+    </a>
+    <a
+      class="appLink item primary"
+      href="/about"
+    >
+      <svg
+        class="icon"
+      />
+      <span
+        class="link"
+      >
+        navlinks.about
+      </span>
+    </a>
+  </div>
+  <button
+    class="button collapseButton background square size_l"
+    data-testid="sidebar-toggle"
+    type="submit"
+  >
+    &lt;
+  </button>
+  <div
+    class="switchers"
+  >
+    <button
+      class="button themeSwitcher clear undefined"
+      data-testid="theme-switcher"
+      type="submit"
+    >
+      <svg
+        class="icons"
+        data-testid="light-theme-icon"
+        height="24"
+        width="24"
+      />
+    </button>
+    <div
+      class=""
+    >
+      <button
+        class="button fontColor clear undefined"
+        type="submit"
+      >
+        language
+      </button>
+    </div>
+  </div>
+</div>
+`;
