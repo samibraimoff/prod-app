@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should have class 1`] = `
+<button
+  class="button clear undefined"
+  type="submit"
+>
+  Test
+</button>
+`;
+
+exports[`Button should render Button 1`] = `
+<button
+  class="button undefined undefined"
+  type="submit"
+>
+  Test
+</button>
+`;
