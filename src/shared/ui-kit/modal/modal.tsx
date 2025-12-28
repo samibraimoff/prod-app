@@ -29,7 +29,7 @@ export const Modal = (props: ModalProps) => {
 
   const mods = {
     [styles.opened]: isOpen,
-    [styles.isClosing]: isClosing,
+    [styles.isClosing]: isClosing
   };
 
   const onClickContent = (e: MouseEvent) => {
@@ -46,19 +46,20 @@ export const Modal = (props: ModalProps) => {
   );
 
   useEffect(() => {
-    if (isOpen) {
-      window.addEventListener("keydown", onKeyDown);
-    }
-
+    if (!isOpen) return;
+    window.addEventListener("keydown", onKeyDown);
     return () => {
       timerRef.current && clearTimeout(timerRef.current);
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [isOpen, onKeyDown]);
 
+  if (!isOpen && !isClosing) return null;
+
   return (
-    <Portal>
-      <div className={cssClassNames(styles.modal, mods, [className])}>
+    // eslint-disable-next-line i18next/no-literal-string
+    <Portal elementId={"modal-root"}>
+      <div data-testid={"modal"} className={cssClassNames(styles.modal, mods, [className])}>
         <div className={styles.overlay} onClick={onCloseHandler}>
           <div className={styles.content} onClick={onClickContent}>
             {children}

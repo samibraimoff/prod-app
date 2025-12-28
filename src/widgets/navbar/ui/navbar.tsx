@@ -19,7 +19,10 @@ export const Navbar = (props: NavbarProps) => {
   }, []);
 
   return (
-    <div className={cssClassNames(styles.navbar, {}, [classNames])}>
+    <div
+      data-testid="navbar"
+      className={cssClassNames(styles.navbar, {}, [classNames])}
+    >
       <Button
         theme={ButtonTheme.BACKGROUND_INVERTED}
         onClick={onToggleModal}
