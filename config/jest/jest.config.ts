@@ -21,13 +21,13 @@ export default {
   collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ["src/**/*.{ts,tsx}", 
+  collectCoverageFrom: ["src/**/*.{ts,tsx}",
     "!src/**/*.test.{ts,tsx}",
     "!src/**/*.stories.{ts,tsx}",
     "!src/**/__tests__/**",
     "!src/**/index.ts",
-    "!src/**/types.ts", 
-    "!src/**/globals.d.ts", 
+    "!src/**/types.ts",
+    "!src/**/globals.d.ts",
     "!src/**/config/**"],
 
   // The directory where Jest should output its coverage files
@@ -97,8 +97,8 @@ export default {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '\\.(s?css)$': 'identity-obj-proxy',
-    '\\.(svg)': path.resolve(__dirname, "jest-empty-component.tsx"),
+    "\\.(s?css)$": "identity-obj-proxy",
+    "\\.(svg)": path.resolve(__dirname, "jest-empty-component.tsx")
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -148,7 +148,7 @@ export default {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ['<rootDir>/config/jest/setup-tests.ts'],
+  setupFilesAfterEnv: ["<rootDir>/config/jest/setup-tests.ts"],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
   // slowTestThreshold: 5,
@@ -167,8 +167,8 @@ export default {
 
   // The glob patterns Jest uses to detect test files
   testMatch: [
-    "<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)"
-  ],
+    "<rootDir>/src/**/*(*.)@(spec|test).[tj]s?(x)"
+  ]
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Applies css opened class when isOpen set to TRUE 1`] = `
+<div
+  class="modal opened"
+  data-testid="modal"
+>
+  <div
+    class="overlay"
+  >
+    <div
+      class="content"
+    />
+  </div>
+</div>
+`;
+
+exports[`Modal Does not show modal when isOpen set to FALSE 1`] = `null`;
+
+exports[`Modal Renders modal when isOpen set to TRUE 1`] = `
+<div
+  class="modal opened"
+  data-testid="modal"
+>
+  <div
+    class="overlay"
+  >
+    <div
+      class="content"
+    />
+  </div>
+</div>
+`;

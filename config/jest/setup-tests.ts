@@ -1,5 +1,6 @@
 import "@testing-library/jest-dom";
 
+console.log("setup-tests loaded");
 beforeEach(() => {
   const existing = document.getElementById("modal-root");
   if (!existing) {

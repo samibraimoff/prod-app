@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portal should successfully create a portal and render child elements 1`] = `
+<div
+  data-testid="modal"
+>
+  <p>
+    Testing portal
+  </p>
+</div>
+`;
