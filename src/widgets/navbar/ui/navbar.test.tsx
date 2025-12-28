@@ -2,6 +2,19 @@ import { render } from "@testing-library/react";
 import { Navbar } from "./navbar";
 import userEvent from "@testing-library/user-event";
 
+beforeEach(() => {
+  const existing = document.getElementById("modal-root");
+  if (!existing) {
+    const portalRoot = document.createElement("div");
+    portalRoot.setAttribute("id", "modal-root");
+    document.body.appendChild(portalRoot);
+  }
+});
+
+afterEach(() => {
+  document.getElementById("modal-root")?.remove();
+});
+
 describe("Navbar", () => {
   test("should render navbar", () => {
     const { container } = render(<Navbar />);

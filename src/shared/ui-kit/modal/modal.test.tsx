@@ -1,6 +1,18 @@
 import { render, screen, fireEvent, act } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { Modal } from "./modal";
+
+beforeEach(() => {
+  const existing = document.getElementById("modal-root");
+  if (!existing) {
+    const portalRoot = document.createElement("div");
+    portalRoot.setAttribute("id", "modal-root");
+    document.body.appendChild(portalRoot);
+  }
+});
+
+afterEach(() => {
+  document.getElementById("modal-root")?.remove();
+});
 
 describe("Modal", () => {
   test("Renders modal when isOpen set to TRUE", () => {

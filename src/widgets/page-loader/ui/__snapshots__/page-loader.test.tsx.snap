@@ -8,6 +8,7 @@ exports[`PageLoader component renders Page loader component 1`] = `
   >
     <div
       class="lds-roller"
+      data-testid="loader"
     >
       <div />
       <div />
