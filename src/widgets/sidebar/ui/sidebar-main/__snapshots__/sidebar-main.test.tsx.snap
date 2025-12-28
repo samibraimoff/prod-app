@@ -10,6 +10,7 @@ exports[`sidebar main should render sidebar main component 1`] = `
   >
     <a
       class="appLink item primary"
+      data-testid="app-link"
       href="/"
     >
       <svg
@@ -23,6 +24,7 @@ exports[`sidebar main should render sidebar main component 1`] = `
     </a>
     <a
       class="appLink item primary"
+      data-testid="app-link"
       href="/about"
     >
       <svg
