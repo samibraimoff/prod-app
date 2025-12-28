@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLoader component renders Page loader component 1`] = `
+<div>
+  <div
+    class="pageLoader"
+    data-testid="page-loader"
+  >
+    <div
+      class="lds-roller"
+    >
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+      <div />
+    </div>
+  </div>
+</div>
+`;
