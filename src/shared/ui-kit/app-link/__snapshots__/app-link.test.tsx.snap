@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppLink component renders app primary link 1`] = `
+<a
+  class="appLink primary"
+  data-testid="app-link"
+  href="/"
+>
+  link
+</a>
+`;
+
+exports[`AppLink component renders app secondary link 1`] = `
+<a
+  class="appLink secondary"
+  data-testid="app-link"
+  href="/"
+>
+  link
+</a>
+`;

@@ -18,6 +18,7 @@ export const AppLink: FC<AppLinkProps> = (props) => {
 
   return (
     <Link
+      data-testid={"app-link"}
       to={to}
       {...rest}
       className={cssClassNames(styles.appLink, {}, [className, styles[theme]])}
