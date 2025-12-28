@@ -1,5 +1,5 @@
 import { Sidebar } from "widgets/sidebar";
-import { userEvent } from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event";
 import { componentRender } from "shared/helpers/component-render/component-render";
 
 describe("sidebar main", () => {
