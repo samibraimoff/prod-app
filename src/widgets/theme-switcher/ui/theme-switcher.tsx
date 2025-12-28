@@ -18,11 +18,22 @@ export const ThemeSwitcher = (props: ThemeSwitcherProps) => {
       className={cssClassNames(styles.themeSwitcher, {}, [className])}
       onClick={toggleTheme}
       theme={ButtonTheme.CLEAR}
+      data-testid="theme-switcher"
     >
       {theme === Theme.DARK ? (
-        <DarkTheme width={24} height={24} className={styles.icons} />
+        <DarkTheme
+          data-testid="dark-theme-icon"
+          width={24}
+          height={24}
+          className={styles.icons}
+        />
       ) : (
-        <LightTheme width={24} height={24} className={styles.icons} />
+        <LightTheme
+          data-testid="light-theme-icon"
+          width={24}
+          height={24}
+          className={styles.icons}
+        />
       )}
     </Button>
   );

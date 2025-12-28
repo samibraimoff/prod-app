@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeSwitcher renders dark icon correctly 1`] = `
+<button
+  class="button themeSwitcher clear undefined"
+  data-testid="theme-switcher"
+  type="submit"
+>
+  <svg
+    class="icons"
+    data-testid="dark-theme-icon"
+    height="24"
+    width="24"
+  />
+</button>
+`;
+
+exports[`ThemeSwitcher renders light icon correctly 1`] = `
+<button
+  class="button themeSwitcher clear undefined"
+  data-testid="theme-switcher"
+  type="submit"
+>
+  <svg
+    class="icons"
+    data-testid="light-theme-icon"
+    height="24"
+    width="24"
+  />
+</button>
+`;
