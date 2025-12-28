@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageSwitcher renders LanguageSwitcher component with long language 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <button
+      class="button fontColor clear undefined"
+      type="submit"
+    >
+      language
+    </button>
+  </div>
+</div>
+`;
+
+exports[`LanguageSwitcher renders LanguageSwitcher component with short language 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <button
+      class="button fontColor clear undefined"
+      type="submit"
+    >
+      short_language
+    </button>
+  </div>
+</div>
+`;
