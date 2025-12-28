@@ -6,3 +6,4 @@ storybook-static
 .loki/report.json
 .loki/report.html
 .DS_Store
+coverage
