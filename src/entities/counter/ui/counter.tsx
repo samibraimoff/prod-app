@@ -19,12 +19,19 @@ export const Counter = () => {
 
   return (
     <>
-      <h1>Counter value: {counterValue}</h1>
-      <p>store example using redux</p>
-      <Button onClick={increment} theme={ButtonTheme.OUTLINE}>
+      <h1 data-testid="counter-value">{counterValue}</h1>
+      <Button
+        onClick={increment}
+        theme={ButtonTheme.OUTLINE}
+        data-testid="increment-btn"
+      >
         Increment
       </Button>
-      <Button onClick={decrement} theme={ButtonTheme.OUTLINE}>
+      <Button
+        onClick={decrement}
+        theme={ButtonTheme.OUTLINE}
+        data-testid="decrement-btn"
+      >
         Decrement
       </Button>
     </>

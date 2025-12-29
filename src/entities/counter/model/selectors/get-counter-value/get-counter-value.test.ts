@@ -10,6 +10,6 @@ describe("getCounterValue selector", () => {
       }
     }
     const result = getCounterValue(state as StateSchema)
-    expect(result).toEqual(10);
+    expect(result).toBe(10);
   })
 })
