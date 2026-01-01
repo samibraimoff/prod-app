@@ -14,5 +14,11 @@
   },
   "errorMessage": {
     "text": "Something went wrong. Please try again later."
+  },
+  "loginForm": {
+    "title": "Login form",
+    "signIn": "Sign in",
+    "username": "Enter user name",
+    "password": "Enter user password"
   }
 }

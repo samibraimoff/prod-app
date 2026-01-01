@@ -1,0 +1,18 @@
+.input {
+    label {
+        margin-bottom: 12px;
+    }
+
+    input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--primary-color);
+        margin-bottom: 18px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
