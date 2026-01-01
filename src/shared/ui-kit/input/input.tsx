@@ -19,16 +19,18 @@ const Input = memo((props: InputProps) => {
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChange?.(e.target.value);
   };
-  return (<label className={styles.input}>
-    {label && label}
-    <input
-      className={classes}
-      placeholder={placeholder}
-      type={type}
-      onChange={onChangeHandler}
-      {...otherProps}
-    />
-  </label>
+  return (
+    <>
+      {label && <label htmlFor={label} className={styles.input}>{label}</label>}
+      <input
+        id={label}
+        className={classes}
+        placeholder={placeholder}
+        type={type}
+        onChange={onChangeHandler}
+        {...otherProps}
+      />
+    </>
   );
 });
 

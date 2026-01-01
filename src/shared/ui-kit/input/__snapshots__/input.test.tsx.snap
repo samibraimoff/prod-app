@@ -4,14 +4,16 @@ exports[`Input component calls onChange 1`] = `
 <div>
   <label
     class="input"
+    for="Enter user name"
   >
     Enter user name
-    <input
-      class="input"
-      placeholder="User name"
-      type="text"
-    />
   </label>
+  <input
+    class="input"
+    id="Enter user name"
+    placeholder="User name"
+    type="text"
+  />
 </div>
 `;
 
@@ -19,13 +21,15 @@ exports[`Input component renders correctly 1`] = `
 <div>
   <label
     class="input"
+    for="Enter user name"
   >
     Enter user name
-    <input
-      class="input"
-      placeholder="User name"
-      type="text"
-    />
   </label>
+  <input
+    class="input"
+    id="Enter user name"
+    placeholder="User name"
+    type="text"
+  />
 </div>
 `;
