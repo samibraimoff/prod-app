@@ -7,15 +7,23 @@ interface ModalProps {
   className?: string;
   children?: ReactNode;
   isOpen?: boolean;
+  lazy?: boolean;
   onClose?: () => void;
 }
 
 const ANIMATION_DELAY = 300;
 
 const Modal = (props: ModalProps) => {
-  const { className, children, isOpen, onClose } = props;
+  const { className, children, isOpen, lazy, onClose } = props;
   const [isClosing, setIsClosing] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout>>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsMounted(true);
+    }
+  }, [isOpen]);
 
   const onCloseHandler = useCallback(() => {
     if (onClose) {
@@ -29,7 +37,7 @@ const Modal = (props: ModalProps) => {
 
   const mods = {
     [styles.opened]: isOpen,
-    [styles.isClosing]: isClosing
+    [styles.isClosing]: isClosing,
   };
 
   const onClickContent = (e: MouseEvent) => {
@@ -56,10 +64,15 @@ const Modal = (props: ModalProps) => {
 
   if (!isOpen && !isClosing) return null;
 
+  if (lazy && !isMounted) return null;
+
   return (
     // eslint-disable-next-line i18next/no-literal-string
     <Portal elementId={"modal-root"}>
-      <div data-testid={"modal"} className={cssClassNames(styles.modal, mods, [className])}>
+      <div
+        data-testid={"modal"}
+        className={cssClassNames(styles.modal, mods, [className])}
+      >
         <div className={styles.overlay} onClick={onCloseHandler}>
           <div className={styles.content} onClick={onClickContent}>
             {children}

@@ -2,34 +2,42 @@
 
 exports[`Input component calls onChange 1`] = `
 <div>
-  <label
+  <div
     class="input"
-    for="Enter user name"
   >
-    Enter user name
-  </label>
-  <input
-    class="input"
-    id="Enter user name"
-    placeholder="User name"
-    type="text"
-  />
+    <label
+      for="Enter user name"
+    >
+      Enter user name
+    </label>
+    <input
+      autocomplete="off"
+      class="input"
+      id="Enter user name"
+      placeholder="User name"
+      type="text"
+    />
+  </div>
 </div>
 `;
 
 exports[`Input component renders correctly 1`] = `
 <div>
-  <label
+  <div
     class="input"
-    for="Enter user name"
   >
-    Enter user name
-  </label>
-  <input
-    class="input"
-    id="Enter user name"
-    placeholder="User name"
-    type="text"
-  />
+    <label
+      for="Enter user name"
+    >
+      Enter user name
+    </label>
+    <input
+      autocomplete="off"
+      class="input"
+      id="Enter user name"
+      placeholder="User name"
+      type="text"
+    />
+  </div>
 </div>
 `;

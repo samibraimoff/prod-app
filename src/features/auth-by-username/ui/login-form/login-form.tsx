@@ -22,27 +22,33 @@ export const LoginForm = (props: LoginFormProps) => {
   const onChangePassword = (value: string) => {
     setPassword(value);
   };
-  
   return (
-    <div className={cssClassNames(styles.loginForm, {}, [className])}>
-      <h2>{t("loginForm.title")}</h2>
+    <form className={cssClassNames(styles.loginForm, {}, [className])}>
+      <legend>{t("loginForm.title")}</legend>
       <Input
         label={t("loginForm.username")}
         type={"text"}
+        // eslint-disable-next-line i18next/no-literal-string
         placeholder={"Login"}
         value={username}
         onChange={onChangeUsername}
+        autoFocus
       />
       <Input
         label={t("loginForm.password")}
         type={"password"}
+        // eslint-disable-next-line i18next/no-literal-string
         placeholder={"Password"}
         value={password}
         onChange={onChangePassword}
       />
-      <Button theme={ButtonTheme.PRIMARY} className={styles.button}>
+      <Button
+        type="submit"
+        theme={ButtonTheme.PRIMARY}
+        className={styles.button}
+      >
         {t("loginForm.signIn")}
       </Button>
-    </div>
+    </form>
   );
 };
