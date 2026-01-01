@@ -1,14 +1,8 @@
-import { cssClassNames } from "shared/helpers/class-names/css-class-names";
-import styles from "./user.module.scss";
+/* eslint-disable i18next/no-literal-string */
 
-interface UserProps {
-  className?: string;
-}
-
-export const User = (props: UserProps) => {
-  const { className } = props;
+export const User = () => {
   return (
-    <div className={cssClassNames(styles.user, {}, [className])}>
+    <div>
       <h1>user</h1>
     </div>
   );
