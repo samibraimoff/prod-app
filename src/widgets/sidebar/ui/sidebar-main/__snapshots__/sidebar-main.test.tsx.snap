@@ -9,7 +9,7 @@ exports[`sidebar main should render sidebar main component 1`] = `
     class="links"
   >
     <a
-      class="appLink item primary"
+      class=" item primary"
       data-testid="app-link"
       href="/"
     >
@@ -23,7 +23,7 @@ exports[`sidebar main should render sidebar main component 1`] = `
       </span>
     </a>
     <a
-      class="appLink item primary"
+      class=" item primary"
       data-testid="app-link"
       href="/about"
     >

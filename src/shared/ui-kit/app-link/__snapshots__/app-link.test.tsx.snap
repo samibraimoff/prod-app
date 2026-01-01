@@ -2,7 +2,7 @@
 
 exports[`AppLink component renders app primary link 1`] = `
 <a
-  class="appLink primary"
+  class=" primary"
   data-testid="app-link"
   href="/"
 >
@@ -12,7 +12,7 @@ exports[`AppLink component renders app primary link 1`] = `
 
 exports[`AppLink component renders app secondary link 1`] = `
 <a
-  class="appLink secondary"
+  class=" secondary"
   data-testid="app-link"
   href="/"
 >

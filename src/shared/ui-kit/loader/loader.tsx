@@ -5,7 +5,7 @@ interface LoaderProps {
   className?: string;
 }
 
-export const Loader = (props: LoaderProps) => {
+const Loader = (props: LoaderProps) => {
   const { className } = props;
   return (
     <div data-testid={"loader"} className={cssClassNames("lds-roller", {}, [className])}>
@@ -20,3 +20,6 @@ export const Loader = (props: LoaderProps) => {
     </div>
   );
 };
+
+Loader.displayName = "Loader";
+export { Loader };

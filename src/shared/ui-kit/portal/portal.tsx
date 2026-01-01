@@ -6,8 +6,11 @@ interface PortalProps {
   elementId?: string;
 }
 
-export const Portal = (props: PortalProps) => {
+const Portal = (props: PortalProps) => {
   const { children, elementId } = props;
   const element = document.getElementById(elementId) || document.body;
   return createPortal(children, element);
 };
+
+Portal.displayName = "Portal";
+export { Portal };
