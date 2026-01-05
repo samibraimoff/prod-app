@@ -1,6 +1,6 @@
-import { LanguageSwitcher } from "./language-switcher";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
+import { LanguageSwitcher } from "./language-switcher";
 
 describe("LanguageSwitcher", () => {
   test("renders LanguageSwitcher component with short language", () => {

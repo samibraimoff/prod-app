@@ -1,6 +1,7 @@
-import { render } from "@testing-library/react";
-import { Navbar } from "./navbar";
 import userEvent from "@testing-library/user-event";
+import { componentRender } from "shared/helpers/component-render/component-render";
+
+import { Navbar } from "./navbar";
 
 beforeEach(() => {
   const existing = document.getElementById("modal-root");
@@ -17,13 +18,13 @@ afterEach(() => {
 
 describe("Navbar", () => {
   test("should render navbar", () => {
-    const { container } = render(<Navbar />);
+    const { container } = componentRender(<Navbar />);
     expect(container).toMatchSnapshot();
   });
 
   test("should render modal when button is clicked", async () => {
     const user = userEvent.setup();
-    const { getByRole, findByTestId, queryByTestId } = render(<Navbar />);
+    const { getByRole, findByTestId, queryByTestId } = componentRender(<Navbar />);
     const buttonElement = getByRole("button", {
       name: /navbar.signIn/i
     });

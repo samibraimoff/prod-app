@@ -1,12 +1,12 @@
-import { ThemeSwitcher } from "./theme-switcher";
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { Theme, useTheme } from "app/providers/theme";
 
-import { useTheme, Theme } from "app/providers/theme";
+import { ThemeSwitcher } from "./theme-switcher";
 
 jest.mock("app/providers/theme", () => ({
   ...jest.requireActual("app/providers/theme"),
-  useTheme: jest.fn()
+  useTheme: jest.fn(),
 }));
 
 const mockedUseTheme = useTheme as jest.MockedFunction<typeof useTheme>;
@@ -15,7 +15,7 @@ describe("ThemeSwitcher", () => {
   test("renders dark icon correctly", () => {
     mockedUseTheme.mockReturnValue({
       theme: Theme.DARK,
-      toggleTheme: jest.fn()
+      toggleTheme: jest.fn(),
     });
     const { getByTestId, queryByTestId } = render(<ThemeSwitcher />);
     const themeSwitcherElement = getByTestId("theme-switcher");
@@ -32,7 +32,7 @@ describe("ThemeSwitcher", () => {
   test("renders light icon correctly", () => {
     mockedUseTheme.mockReturnValue({
       theme: Theme.LIGHT,
-      toggleTheme: jest.fn()
+      toggleTheme: jest.fn(),
     });
     const { getByTestId, queryByTestId } = render(<ThemeSwitcher />);
     const themeSwitcherElement = getByTestId("theme-switcher");
@@ -51,7 +51,7 @@ describe("ThemeSwitcher", () => {
     const toggleTheme = jest.fn();
     mockedUseTheme.mockReturnValue({
       theme: Theme.LIGHT,
-      toggleTheme
+      toggleTheme,
     });
     const { getByTestId } = render(<ThemeSwitcher />);
     const themeSwitcherElement = getByTestId("theme-switcher");

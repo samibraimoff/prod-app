@@ -1,5 +1,6 @@
-import { Portal } from "./portal";
 import { render, screen } from "@testing-library/react";
+
+import { Portal } from "./portal";
 
 beforeEach(() => {
   const existing = document.getElementById("modal-root");

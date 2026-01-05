@@ -1,6 +1,6 @@
-import { Sidebar } from "widgets/sidebar";
 import userEvent from "@testing-library/user-event";
 import { componentRender } from "shared/helpers/component-render/component-render";
+import { Sidebar } from "widgets/sidebar";
 
 describe("sidebar main", () => {
   test("should render sidebar main component", () => {

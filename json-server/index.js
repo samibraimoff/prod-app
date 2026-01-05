@@ -23,10 +23,13 @@ server.use(async (req, res, next) => {
 
 // Эндпоинт для логина
 server.post("/login", (req, res) => {
+  console.log("Login endpoint called");
   try {
     const { username, password } = req.body;
     // eslint-disable-next-line no-undef
-    const db = JSON.parse(fs.readFileSync(path.resolve(__dirname, "db.json"), "UTF-8"));
+    const db = JSON.parse(
+      fs.readFileSync(path.resolve(path.__dirname, "db.json"), "UTF-8")
+    );
     const { users = [] } = db;
 
     const userFromBd = users.find(

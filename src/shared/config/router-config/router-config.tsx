@@ -1,7 +1,7 @@
-import { RouteProps } from "react-router-dom";
-import { Home } from "pages/home";
 import { About } from "pages/about";
+import { Home } from "pages/home";
 import { NotFoundPage } from "pages/not-found-page";
+import { RouteProps } from "react-router-dom";
 
 export enum AppRoutes {
   HOME = "home",

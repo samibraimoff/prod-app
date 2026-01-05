@@ -1,8 +1,8 @@
-import type { ComponentStory, ComponentMeta } from "@storybook/react";
+import type { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Theme } from "app/providers/theme";
+import { ThemeDecorator } from "shared/config/storybook/decorators/theme-decorator";
 
 import { PageWithErrorMessage } from "./page-with-error-message";
-import { ThemeDecorator } from "shared/config/storybook/decorators/theme-decorator";
-import { Theme } from "app/providers/theme";
 
 export default {
   title: "widgets/PageWithErrorMessage",

@@ -1,6 +1,7 @@
-import { cssClassNames } from "shared/helpers/class-names/css-class-names";
-import styles from "./button.module.scss";
 import { ButtonHTMLAttributes, FC } from "react";
+import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+
+import styles from "./button.module.scss";
 
 export enum ButtonTheme {
   PRIMARY = "primary",
@@ -21,20 +22,23 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: ButtonTheme;
   square?: boolean;
   size?: ButtonSize;
+  disabled?: boolean;
 }
 
 const Button: FC<ButtonProps> = (props) => {
-  const { className, theme, square, size, children, ...rest } = props;
+  const { className, theme, square, size, disabled, children, ...rest } = props;
 
   const mods: Record<string, boolean> = {
     [styles.square]: square,
-    [styles[size]]: true
+    [styles[size]]: true,
+    [styles.disabled]: disabled,
   };
 
   return (
     <button
       type="submit"
       className={cssClassNames(styles.button, mods, [className, styles[theme]])}
+      disabled={disabled}
       {...rest}
     >
       {children}

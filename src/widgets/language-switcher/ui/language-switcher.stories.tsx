@@ -1,16 +1,16 @@
-import type { ComponentStory, ComponentMeta } from "@storybook/react";
+import type { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Theme } from "app/providers/theme";
+import { ThemeDecorator } from "shared/config/storybook/decorators/theme-decorator";
 
 import { LanguageSwitcher } from "./language-switcher";
-import { ThemeDecorator } from "shared/config/storybook/decorators/theme-decorator";
-import { Theme } from "app/providers/theme";
 
 export default {
   title: "widgets/LanguageSwitcher",
   component: LanguageSwitcher,
   tags: ["autodocs"],
   argTypes: {
-    backgroundColor: { control: "color" }
-  }
+    backgroundColor: { control: "color" },
+  },
 } as ComponentMeta<typeof LanguageSwitcher>;
 
 const Template: ComponentStory<typeof LanguageSwitcher> = (args) => (
@@ -22,7 +22,7 @@ LanguageSwitcherLight.args = {};
 
 export const LanguageSwitcherShortLangLight = Template.bind({});
 LanguageSwitcherShortLangLight.args = {
-  short: true
+  short: true,
 };
 
 export const LanguageSwitcherDark = Template.bind({});
@@ -30,7 +30,7 @@ LanguageSwitcherDark.args = {};
 
 export const LanguageSwitcherShortDark = Template.bind({});
 LanguageSwitcherShortDark.args = {
-  short: true
+  short: true,
 };
 
 LanguageSwitcherDark.decorators = [ThemeDecorator(Theme.DARK)];

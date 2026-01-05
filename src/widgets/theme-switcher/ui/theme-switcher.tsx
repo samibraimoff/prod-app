@@ -1,8 +1,9 @@
-import { useTheme, Theme } from "app/providers/theme";
-import { cssClassNames } from "shared/helpers/class-names/css-class-names";
-import { Button, ButtonTheme } from "shared/ui-kit/button/button";
+import { Theme, useTheme } from "app/providers/theme";
 import DarkTheme from "shared/assets/icons/dark.svg";
 import LightTheme from "shared/assets/icons/light.svg";
+import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+import { Button, ButtonTheme } from "shared/ui-kit/button/button";
+
 import styles from "./theme-switcher.module.scss";
 
 interface ThemeSwitcherProps {

@@ -1,7 +1,8 @@
-import { Link, LinkProps } from "react-router-dom";
 import { FC } from "react";
-import styles from "./app-link.module.scss";
+import { Link, LinkProps } from "react-router-dom";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+
+import styles from "./app-link.module.scss";
 
 export enum ThemeLink {
   PRIMARY = "primary",

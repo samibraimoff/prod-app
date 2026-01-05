@@ -1,7 +1,8 @@
-import { ReactNode, useRef, useState, useEffect, useCallback } from "react";
-import styles from "./modal.module.scss";
+import { ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+
 import { Portal } from "../portal/portal";
+import styles from "./modal.module.scss";
 
 interface ModalProps {
   className?: string;
@@ -40,7 +41,7 @@ const Modal = (props: ModalProps) => {
     [styles.isClosing]: isClosing,
   };
 
-  const onClickContent = (e: MouseEvent) => {
+  const onClickContent = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
   };
 
@@ -55,6 +56,7 @@ const Modal = (props: ModalProps) => {
 
   useEffect(() => {
     if (!isOpen) return;
+
     window.addEventListener("keydown", onKeyDown);
     return () => {
       timerRef.current && clearTimeout(timerRef.current);

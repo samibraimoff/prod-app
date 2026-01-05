@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
+import AboutIcon from "shared/assets/icons/about.svg";
+import HomeIcon from "shared/assets/icons/home.svg";
+import { RoutePath } from "shared/config/router-config/router-config";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
 import { AppLink, Button, ButtonTheme, ThemeLink } from "shared/ui-kit";
 import { ButtonSize } from "shared/ui-kit/button/button";
 import { LanguageSwitcher } from "widgets/language-switcher";
 import { ThemeSwitcher } from "widgets/theme-switcher";
-import { RoutePath } from "shared/config/router-config/router-config";
-import HomeIcon from "shared/assets/icons/home.svg";
-import AboutIcon from "shared/assets/icons/about.svg";
+
 import styles from "./sidebar-main.module.scss";
 
 interface SidebarProps {
@@ -34,11 +34,19 @@ export const Sidebar = (props: SidebarProps) => {
       )}
     >
       <div className={styles.links}>
-        <AppLink className={styles.item} to={RoutePath.home} theme={ThemeLink.PRIMARY}>
+        <AppLink
+          className={styles.item}
+          to={RoutePath.home}
+          theme={ThemeLink.PRIMARY}
+        >
           <HomeIcon className={styles.icon} />
           <span className={styles.link}>{t("navlinks.home")}</span>
         </AppLink>
-        <AppLink className={styles.item} to={RoutePath.about} theme={ThemeLink.PRIMARY}>
+        <AppLink
+          className={styles.item}
+          to={RoutePath.about}
+          theme={ThemeLink.PRIMARY}
+        >
           <AboutIcon className={styles.icon} />
           <span className={styles.link}>{t("navlinks.about")}</span>
         </AppLink>

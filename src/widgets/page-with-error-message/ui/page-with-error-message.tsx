@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
-import styles from "./page-with-error-message.module.scss";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+
+import styles from "./page-with-error-message.module.scss";
 
 interface PageWithErrorMessageProps {
   className?: string;

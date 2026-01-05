@@ -1,7 +1,8 @@
-import { Counter } from "./counter";
-import { componentRender } from "shared/helpers/component-render/component-render";
-import userEvent from "@testing-library/user-event";
 import { screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import { componentRender } from "shared/helpers/component-render/component-render";
+
+import { Counter } from "./counter";
 
 describe("Counter component", () => {
   test("renders initial state value", () => {

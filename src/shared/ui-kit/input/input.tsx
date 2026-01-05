@@ -1,5 +1,6 @@
-import { InputHTMLAttributes, memo, useEffect, useState, useRef } from "react";
+import { InputHTMLAttributes, memo, useEffect, useRef, useState } from "react";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+
 import styles from "./input.module.scss";
 
 type InputHTMLProps = Omit<

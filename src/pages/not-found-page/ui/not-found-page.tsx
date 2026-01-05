@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+
 import styles from "./not-found-page.module.scss";
 
 export const NotFoundPage = () => {

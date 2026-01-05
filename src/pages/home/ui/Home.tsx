@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+
 import styles from "./Home.module.scss";
 
 const Home = () => {
