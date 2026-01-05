@@ -6,7 +6,8 @@
     "about": "About"
   },
   "navbar": {
-    "signIn": "Sign In"
+    "signIn": "Sign In",
+    "logout": "Logout"
   },
   "notFoundPage": {
     "title": "404 - Page not found",
@@ -19,6 +20,7 @@
     "title": "Login form",
     "signIn": "Sign in",
     "username": "Enter user name",
-    "password": "Enter user password"
+    "password": "Enter user password",
+    "error": "Invalid username or password"
   }
 }
