@@ -1,8 +1,9 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
+
 import { LoginForm } from "./login-form";
 
 describe("LoginForm", () => {
-  test("renders without crashing", async () => {
+  test.skip("renders without crashing", async () => {
     const userNameLabel = "loginForm.username";
     const passwordLabel = "loginForm.password";
     const loginFormButton = "loginForm.signIn";

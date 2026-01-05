@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useCallback } from "react";
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
-import { Button, ButtonTheme, Input } from "shared/ui-kit";
+import {
+  Button,
+  ButtonTheme,
+  Input,
+  Tags,
+  Text,
+  TextTheme,
+} from "shared/ui-kit";
 
+import { getLoginState } from "../../model/selectors/get-login-state/get-login-state";
+import { loginByUsername } from "../../model/services/login-by-username/login-by-username";
+import { loginActions } from "../../model/slice/login-slice";
 import styles from "./login-form.module.scss";
 
 interface LoginFormProps {
@@ -12,19 +23,49 @@ interface LoginFormProps {
 export const LoginForm = (props: LoginFormProps) => {
   const { className } = props;
   const { t } = useTranslation();
+  const dispatch = useDispatch();
+  const { username, password, isLoading, error } = useSelector(getLoginState);
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const onChangeUsername = useCallback(
+    (value: string) => {
+      dispatch(loginActions.setUsername(value));
+    },
+    [dispatch]
+  );
+  const onChangePassword = useCallback(
+    (value: string) => {
+      dispatch(loginActions.setPassword(value));
+    },
+    [dispatch]
+  );
 
-  const onChangeUsername = (value: string) => {
-    setUsername(value);
-  };
-  const onChangePassword = (value: string) => {
-    setPassword(value);
-  };
+  const onLoginClick = useCallback(
+    (e) => {
+      e.preventDefault();
+      dispatch(loginByUsername({ username, password }));
+    },
+    [dispatch, username, password]
+  );
+
   return (
     <form className={cssClassNames(styles.loginForm, {}, [className])}>
-      <legend>{t("loginForm.title")}</legend>
+      <Text tag={Tags.LEGEND} title={t("loginForm.title")} />
+      {error && (
+        <>
+          <Text
+            title={t("loginForm.error")}
+            className={styles.error}
+            theme={TextTheme.ERROR}
+            tag={Tags.HEADING_THREE}
+          />
+          <Text
+            paragraph={error}
+            className={styles.error}
+            theme={TextTheme.ERROR}
+            tag={Tags.PARAGRAPH}
+          />
+        </>
+      )}
       <Input
         label={t("loginForm.username")}
         type={"text"}
@@ -46,6 +87,8 @@ export const LoginForm = (props: LoginFormProps) => {
         type="submit"
         theme={ButtonTheme.PRIMARY}
         className={styles.button}
+        onClick={onLoginClick}
+        disabled={isLoading}
       >
         {t("loginForm.signIn")}
       </Button>

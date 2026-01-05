@@ -1,0 +1,1 @@
+test.todo("getAuthData selector tests");

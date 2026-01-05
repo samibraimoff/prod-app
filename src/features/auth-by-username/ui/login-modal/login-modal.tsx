@@ -1,5 +1,6 @@
-import { LoginForm } from "../login-form/login-form";
 import { Modal } from "shared/ui-kit";
+
+import { LoginForm } from "../login-form/login-form";
 
 interface LoginModalProps {
   isOpen: boolean;
