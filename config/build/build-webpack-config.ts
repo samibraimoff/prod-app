@@ -1,9 +1,9 @@
 import { Configuration } from "webpack";
 
+import { buildDevServer } from "./build-dev-server";
 import { buildLoaders } from "./build-loaders";
 import { buildPlugins } from "./build-plugins";
 import { buildResolvers } from "./build-resolvers";
-import { buildDevServer } from "./build-dev-server";
 import { BuildOptions } from "./types";
 
 export const buildWebpackConfig = (options: BuildOptions): Configuration => {
@@ -14,14 +14,14 @@ export const buildWebpackConfig = (options: BuildOptions): Configuration => {
     output: {
       filename: "[name].[contenthash].js",
       path: paths.build,
-      clean: true,
+      clean: true
     },
     plugins: buildPlugins(options),
     module: {
-      rules: buildLoaders(options),
+      rules: buildLoaders(options)
     },
     resolve: buildResolvers(options),
     devtool: isDev ? "inline-source-map" : undefined,
-    devServer: isDev ? buildDevServer(options) : undefined,
+    devServer: isDev ? buildDevServer(options) : undefined
   };
 };

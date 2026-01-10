@@ -48,7 +48,7 @@ module.exports = {
     "simple-import-sort/exports": "error",
     "i18next/no-literal-string": [
       "error",
-      { markupOnly: true, ignoreAttribute: ["data-testid", "to"] },
+      { markupOnly: true, ignoreAttribute: ["data-testid", "to", "name"] },
     ],
     "max-len": ["error", { code: 130, ignoreComments: true }],
   },

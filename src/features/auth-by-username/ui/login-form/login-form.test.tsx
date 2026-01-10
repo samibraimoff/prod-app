@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 
-import { LoginForm } from "./login-form";
+import LoginForm from "./login-form";
 
 describe("LoginForm", () => {
   test.skip("renders without crashing", async () => {

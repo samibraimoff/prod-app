@@ -1,5 +1,6 @@
-import { BuildOptions } from "./types";
 import type { Configuration as DevServerConfiguration } from "webpack-dev-server";
+
+import { BuildOptions } from "./types";
 
 export const buildDevServer = (
   options: BuildOptions
@@ -10,7 +11,7 @@ export const buildDevServer = (
     open: true,
     historyApiFallback: true,
     client: {
-      overlay: false,
-    },
+      overlay: false
+    }
   };
 };

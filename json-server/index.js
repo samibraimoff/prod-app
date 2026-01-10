@@ -26,9 +26,9 @@ server.post("/login", (req, res) => {
   console.log("Login endpoint called");
   try {
     const { username, password } = req.body;
-    // eslint-disable-next-line no-undef
     const db = JSON.parse(
-      fs.readFileSync(path.resolve(path.__dirname, "db.json"), "UTF-8")
+      // eslint-disable-next-line no-undef
+      fs.readFileSync(path.resolve(__dirname, "db.json"), "UTF-8")
     );
     const { users = [] } = db;
 
