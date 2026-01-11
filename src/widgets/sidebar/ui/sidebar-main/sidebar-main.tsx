@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import AboutIcon from "shared/assets/icons/about.svg";
 import HomeIcon from "shared/assets/icons/home.svg";
+import ProfileIcon from "shared/assets/icons/profile.svg";
 import { RoutePath } from "shared/config/router-config/router-config";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
 import { AppLink, Button, ButtonTheme, ThemeLink } from "shared/ui-kit";
@@ -49,6 +50,14 @@ export const Sidebar = (props: SidebarProps) => {
         >
           <AboutIcon className={styles.icon} />
           <span className={styles.link}>{t("navlinks.about")}</span>
+        </AppLink>
+        <AppLink
+          className={styles.item}
+          to={RoutePath.profile}
+          theme={ThemeLink.PRIMARY}
+        >
+          <ProfileIcon className={styles.icon} />
+          <span className={styles.link}>{t("navlinks.profile")}</span>
         </AppLink>
       </div>
       <Button

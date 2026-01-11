@@ -3,7 +3,8 @@
   "short_language": "En",
   "navlinks": {
     "home": "Главная",
-    "about": "О нас"
+    "about": "О нас",
+    "profile": "Профиль"
   },
   "navbar": {
     "signIn": "Войти",

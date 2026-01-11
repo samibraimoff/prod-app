@@ -3,7 +3,8 @@
   "short_language": "Ru",
   "navlinks": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "profile": "Profile"
   },
   "navbar": {
     "signIn": "Sign In",

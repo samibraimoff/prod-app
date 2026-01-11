@@ -36,6 +36,20 @@ exports[`sidebar main should render sidebar main component 1`] = `
         navlinks.about
       </span>
     </a>
+    <a
+      class=" item primary"
+      data-testid="app-link"
+      href="/profile"
+    >
+      <svg
+        class="icon"
+      />
+      <span
+        class="link"
+      >
+        navlinks.profile
+      </span>
+    </a>
   </div>
   <button
     class="button collapseButton background square size_l"
