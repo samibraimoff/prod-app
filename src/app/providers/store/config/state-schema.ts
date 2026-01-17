@@ -1,4 +1,5 @@
 import { AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject } from "@reduxjs/toolkit";
+import { IProfileSchema } from "entities/profile";
 import { IUserSchema } from "entities/user";
 import { ILoginSchema } from "features/auth-by-username";
 
@@ -6,7 +7,8 @@ export interface StateSchema {
   user: IUserSchema,
 
   // asynchronous reducers
-  loginForm?: ILoginSchema
+  loginForm?: ILoginSchema,
+  profile?: IProfileSchema,
 }
 
 export type StateSchemaKey = keyof StateSchema;

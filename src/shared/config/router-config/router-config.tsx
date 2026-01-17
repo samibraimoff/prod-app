@@ -7,8 +7,10 @@ import { RouteProps } from "react-router-dom";
 export enum AppRoutes {
   HOME = "home",
   ABOUT = "about",
-  NOT_FOUND = "not_found",
   PROFILE = "profile",
+
+  // last page
+  NOT_FOUND = "not_found",
 }
 
 export const RoutePath: Record<AppRoutes, string> = {

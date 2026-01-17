@@ -1,25 +1,22 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import AboutIcon from "shared/assets/icons/about.svg";
-import HomeIcon from "shared/assets/icons/home.svg";
-import ProfileIcon from "shared/assets/icons/profile.svg";
-import { RoutePath } from "shared/config/router-config/router-config";
+import { memo, useState } from "react";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
-import { AppLink, Button, ButtonTheme, ThemeLink } from "shared/ui-kit";
+import { Button, ButtonTheme } from "shared/ui-kit";
 import { ButtonSize } from "shared/ui-kit/button/button";
 import { LanguageSwitcher } from "widgets/language-switcher";
 import { ThemeSwitcher } from "widgets/theme-switcher";
 
+import { items } from "../../model/items";
+import { SidebarItem } from "../sidebar-item/sidebar-item";
 import styles from "./sidebar-main.module.scss";
 
 interface SidebarProps {
   className?: string;
 }
 
-export const Sidebar = (props: SidebarProps) => {
+
+export const Sidebar = memo((props: SidebarProps) => {
   const { className } = props;
   const [collapsed, setCollapsed] = useState(false);
-  const { t } = useTranslation("translation");
 
   const toggleSidebar = () => {
     setCollapsed((prevState) => !prevState);
@@ -35,30 +32,13 @@ export const Sidebar = (props: SidebarProps) => {
       )}
     >
       <div className={styles.links}>
-        <AppLink
-          className={styles.item}
-          to={RoutePath.home}
-          theme={ThemeLink.PRIMARY}
-        >
-          <HomeIcon className={styles.icon} />
-          <span className={styles.link}>{t("navlinks.home")}</span>
-        </AppLink>
-        <AppLink
-          className={styles.item}
-          to={RoutePath.about}
-          theme={ThemeLink.PRIMARY}
-        >
-          <AboutIcon className={styles.icon} />
-          <span className={styles.link}>{t("navlinks.about")}</span>
-        </AppLink>
-        <AppLink
-          className={styles.item}
-          to={RoutePath.profile}
-          theme={ThemeLink.PRIMARY}
-        >
-          <ProfileIcon className={styles.icon} />
-          <span className={styles.link}>{t("navlinks.profile")}</span>
-        </AppLink>
+        {items.map((item) => (
+          <SidebarItem
+            collapsed={collapsed}
+            key={item.path}
+            item={item}
+          />
+        ))}
       </div>
       <Button
         data-testid="sidebar-toggle"
@@ -76,4 +56,6 @@ export const Sidebar = (props: SidebarProps) => {
       </div>
     </div>
   );
-};
+});
+
+Sidebar.displayName = "Sidebar";

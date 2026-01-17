@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { useTranslation } from "react-i18next";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
 import { Button, ButtonTheme } from "shared/ui-kit/button/button";
@@ -9,7 +10,7 @@ interface LanguageSwitcherProps {
   short?: boolean;
 }
 
-export const LanguageSwitcher = (props: LanguageSwitcherProps) => {
+export const LanguageSwitcher = memo((props: LanguageSwitcherProps) => {
   const { className, short } = props;
   const { t, i18n } = useTranslation("translation");
 
@@ -27,4 +28,6 @@ export const LanguageSwitcher = (props: LanguageSwitcherProps) => {
       </Button>
     </div>
   );
-};
+});
+
+LanguageSwitcher.displayName = "LanguageSwitcher";

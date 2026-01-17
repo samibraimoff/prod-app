@@ -2,28 +2,28 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true,
+    jest: true
   },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:i18next/recommended",
+    "plugin:i18next/recommended"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: "latest",
-    sourceType: "module",
+    sourceType: "module"
   },
   plugins: [
     "react",
     "@typescript-eslint",
     "i18next",
     "react-hooks",
-    "simple-import-sort",
+    "simple-import-sort"
   ],
   rules: {
     "react/jsx-indent": [2, 2],
@@ -31,7 +31,7 @@ module.exports = {
     indent: [2, 2],
     "react/jsx-filename-extension": [
       2,
-      { extensions: [".js", ".jsx", ".tsx", ".ts"] },
+      { extensions: [".js", ".jsx", ".tsx", ".ts"] }
     ],
     "react/jsx-props-no-spreading": "warn",
     "react/react-in-jsx-scope": "off",
@@ -39,7 +39,12 @@ module.exports = {
     "react/function-component-definition": "off",
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", {
+      argsIgnorePattern: "^_",
+      varsIgnorePattern: "^_",
+      ignoreRestSiblings: true
+    }],
     "no-shadow": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
@@ -48,24 +53,29 @@ module.exports = {
     "simple-import-sort/exports": "error",
     "i18next/no-literal-string": [
       "error",
-      { markupOnly: true, ignoreAttribute: ["data-testid", "to", "name"] },
+      { markupOnly: true, ignoreAttribute: ["data-testid", "to", "name"] }
     ],
-    "max-len": ["error", { code: 130, ignoreComments: true }],
+    "max-len": ["error", { code: 130, ignoreComments: true }]
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
   },
   overrides: [
     {
       files: ["**/src/**/*.test.{ts,tsx}"],
       rules: {
-        "i18next/no-literal-string": "off",
-      },
+        "i18next/no-literal-string": "off"
+      }
     },
     {
       files: ["*.stories.@(ts|tsx|js|jsx)"],
       rules: {
         "react/jsx-props-no-spreading": "off",
         "i18next/no-literal-string": "off",
-        "max-len": "off",
-      },
-    },
-  ],
+        "max-len": "off"
+      }
+    }
+  ]
 };

@@ -34,7 +34,14 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "firstname": "Sam",
+    "lastname": "Ibraimoff",
+    "age": 100,
+    "currency": "USD",
+    "country": "USA",
+    "city": "Chicago",
+    "username": "admin",
+    "avatar": "https://i.pravatar.cc/300\n"
   },
   "users": [
     {

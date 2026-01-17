@@ -1,4 +1,5 @@
 /* eslint-disable indent */
+import { memo } from "react";
 import { cssClassNames } from "shared/helpers/class-names/css-class-names";
 
 import styles from "./text.module.scss";
@@ -26,7 +27,7 @@ interface TextProps {
   tag?: Tags;
 }
 
-const Text = (props: TextProps) => {
+const Text = memo((props: TextProps) => {
   const { className, title, paragraph, theme = TextTheme.PRIMARY, tag } = props;
   const mod = { [styles[theme]]: true };
 
@@ -61,7 +62,7 @@ const Text = (props: TextProps) => {
       {paragraph && tags(tag, undefined, paragraph)}
     </div>
   );
-};
+});
 
 Text.displayName = "Text";
 export { Tags, Text, TextTheme };
