@@ -7,7 +7,6 @@ module.exports = {
     "@storybook/addon-a11y",
     "@storybook/addon-actions",
     "@storybook/addon-docs",
-    "@storybook/addon-onboarding",
   ],
   framework: "@storybook/react",
   core: {
