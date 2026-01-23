@@ -10,15 +10,15 @@ import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 
 const component = (
-  <StoreProvider>
-    <BrowserRouter>
+  <BrowserRouter>
+    <StoreProvider>
       <ErrorBoundary>
         <ThemeProvider>
           <App />
         </ThemeProvider>
       </ErrorBoundary>
-    </BrowserRouter>
-  </StoreProvider>
+    </StoreProvider>
+  </BrowserRouter>
 );
 
 render(component, document.getElementById("root"));

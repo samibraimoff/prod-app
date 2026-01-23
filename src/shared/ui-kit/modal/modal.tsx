@@ -1,5 +1,15 @@
-import { ReactNode, useCallback, useEffect, useRef, useState } from "react";
-import { cssClassNames } from "shared/helpers/class-names/css-class-names";
+import {
+  MutableRefObject,
+  ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
+import {
+  cssClassNames,
+  Mods,
+} from "shared/helpers/class-names/css-class-names";
 
 import { Portal } from "../portal/portal";
 import styles from "./modal.module.scss";
@@ -18,7 +28,7 @@ const Modal = (props: ModalProps) => {
   const { className, children, isOpen, lazy, onClose } = props;
   const [isClosing, setIsClosing] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setTimeout>>(null);
+  const timerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
 
   useEffect(() => {
     if (isOpen) {
@@ -36,7 +46,7 @@ const Modal = (props: ModalProps) => {
     }
   }, [onClose]);
 
-  const mods = {
+  const mods: Mods = {
     [styles.opened]: isOpen,
     [styles.isClosing]: isClosing,
   };
@@ -51,7 +61,7 @@ const Modal = (props: ModalProps) => {
         onCloseHandler();
       }
     },
-    [onCloseHandler]
+    [onCloseHandler],
   );
 
   useEffect(() => {

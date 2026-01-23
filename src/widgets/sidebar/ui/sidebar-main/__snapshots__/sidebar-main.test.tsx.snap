@@ -62,7 +62,7 @@ exports[`sidebar main should render sidebar main component 1`] = `
     class="switchers"
   >
     <button
-      class="button themeSwitcher clear undefined"
+      class="button themeSwitcher clear size_m"
       data-testid="theme-switcher"
       type="submit"
     >
@@ -77,7 +77,7 @@ exports[`sidebar main should render sidebar main component 1`] = `
       class=""
     >
       <button
-        class="button fontColor clear undefined"
+        class="button fontColor clear size_m"
         type="submit"
       >
         language

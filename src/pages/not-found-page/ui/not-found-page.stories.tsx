@@ -13,11 +13,7 @@ export default {
   },
 } as ComponentMeta<typeof NotFoundPage>;
 
-const Template: ComponentStory<typeof NotFoundPage> = (args) => (
-  // eslint-disable-next-line react/jsx-props-no-spreading, @typescript-eslint/ban-ts-comment
-  // @ts-ignore - Storybook args are always an object
-  <NotFoundPage {...args} />
-);
+const Template: ComponentStory<typeof NotFoundPage> = () => <NotFoundPage />;
 
 export const NotFoundPageLight = Template.bind({});
 NotFoundPageLight.args = {};

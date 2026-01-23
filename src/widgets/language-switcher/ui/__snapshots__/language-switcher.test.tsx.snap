@@ -6,7 +6,7 @@ exports[`LanguageSwitcher renders LanguageSwitcher component with long language 
     class=""
   >
     <button
-      class="button fontColor clear undefined"
+      class="button fontColor clear size_m"
       type="submit"
     >
       language
@@ -21,7 +21,7 @@ exports[`LanguageSwitcher renders LanguageSwitcher component with short language
     class=""
   >
     <button
-      class="button fontColor clear undefined"
+      class="button fontColor clear size_m"
       type="submit"
     >
       short_language

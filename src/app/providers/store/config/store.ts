@@ -1,12 +1,15 @@
-import { configureStore, ReducersMapObject } from "@reduxjs/toolkit";
+import { CombinedState, configureStore, Reducer, ReducersMapObject } from "@reduxjs/toolkit";
 import { userReducer } from "entities/user";
+import { NavigateOptions, To } from "react-router-dom";
+import { $api } from "shared/api/api";
 
 import { createReducerManager } from "./reducer-manager";
 import { StateSchema } from "./state-schema";
 
 export const createReduxStore = (
   initialState?: StateSchema,
-  asyncReducers?: ReducersMapObject<StateSchema>
+  asyncReducers?: ReducersMapObject<StateSchema>,
+  navigate?: (to: To, options?: NavigateOptions) => void
 ) => {
 
   const rootReducer: ReducersMapObject<StateSchema> = {
@@ -16,10 +19,18 @@ export const createReduxStore = (
 
   const reducerManager = createReducerManager(rootReducer);
 
-  const store = configureStore<StateSchema>({
-    reducer: reducerManager.reduce,
+  const store = configureStore({
+    reducer: reducerManager.reduce as Reducer<CombinedState<StateSchema>>,
     devTools: __IS_DEV__,
-    preloadedState: initialState
+    preloadedState: initialState,
+    middleware: getDefaultMiddleware => getDefaultMiddleware({
+      thunk: {
+        extraArgument: {
+          api: $api,
+          navigate: navigate
+        }
+      }
+    })
   });
 
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment

@@ -7,7 +7,7 @@ exports[`Navbar should render navbar 1`] = `
     data-testid="navbar"
   >
     <button
-      class="button links backgroundInverted undefined"
+      class="button links backgroundInverted size_m"
       type="submit"
     >
       navbar.signIn

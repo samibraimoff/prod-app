@@ -2,7 +2,7 @@
 
 exports[`ThemeSwitcher renders dark icon correctly 1`] = `
 <button
-  class="button themeSwitcher clear undefined"
+  class="button themeSwitcher clear size_m"
   data-testid="theme-switcher"
   type="submit"
 >
@@ -17,7 +17,7 @@ exports[`ThemeSwitcher renders dark icon correctly 1`] = `
 
 exports[`ThemeSwitcher renders light icon correctly 1`] = `
 <button
-  class="button themeSwitcher clear undefined"
+  class="button themeSwitcher clear size_m"
   data-testid="theme-switcher"
   type="submit"
 >

@@ -23,7 +23,7 @@ server.use(async (req, res, next) => {
 
 // Эндпоинт для логина
 server.post("/login", (req, res) => {
-  console.log("Login endpoint called");
+  console.log("-----Login endpoint called------");
   try {
     const { username, password } = req.body;
     const db = JSON.parse(

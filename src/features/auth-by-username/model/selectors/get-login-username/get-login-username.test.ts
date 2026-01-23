@@ -1,7 +1,6 @@
-import { DeepPartial } from "@reduxjs/toolkit"
-import { StateSchema } from "app/providers/store"
+import { StateSchema } from "app/providers/store";
 
-import { getLoginUsername } from "./get-login-username"
+import { getLoginUsername } from "./get-login-username";
 
 
 test("getLoginUsername", () => {
@@ -9,6 +8,6 @@ test("getLoginUsername", () => {
     loginForm: {
       username: "admin"
     }
-  } 
-  expect(getLoginUsername(state as StateSchema)).toBe("admin")
-})
+  };
+  expect(getLoginUsername(state as StateSchema)).toBe("admin");
+});

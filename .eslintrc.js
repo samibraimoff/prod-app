@@ -18,6 +18,10 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module"
   },
+  globals: {
+    __API_URL__: true,
+    __IS_DEV__: true
+  },
   plugins: [
     "react",
     "@typescript-eslint",
@@ -51,6 +55,7 @@ module.exports = {
     "no-param-reassign": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "no-undef": "off",
     "i18next/no-literal-string": [
       "error",
       { markupOnly: true, ignoreAttribute: ["data-testid", "to", "name"] }

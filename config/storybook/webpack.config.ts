@@ -11,30 +11,31 @@ export default ({ config }: { config: webpack.Configuration }) => {
     entry: "",
     html: ""
   };
-  config.resolve?.modules?.unshift(paths.src);
-  config.resolve?.extensions?.push(".ts", ".tsx");
+  config!.resolve?.modules?.unshift(paths.src);
+  config!.resolve?.extensions?.push(".ts", ".tsx");
 
-  if (config.module?.rules) {
-    config.module.rules = config.module.rules.map(rule => {
-      if (typeof rule === "object" && rule !== null && /svg/.test(rule.test as string)) {
-        return {
-          ...rule,
-          exclude: /\.svg$/i
-        };
-      }
-      return rule;
+
+  config!.module!.rules = config!.module!.rules!.map(rule => {
+    if (typeof rule === "object" && rule !== null && /svg/.test(rule.test as string)) {
+      return {
+        ...rule,
+        exclude: /\.svg$/i
+      };
     }
-    );
+    return rule;
   }
-  config.module?.rules?.push({
+  );
+
+  config!.module!.rules!.push({
     test: /\.svg$/,
     use: ["@svgr/webpack"]
   });
-  config.module?.rules?.push(buildCssLoader(true));
+  config!.module!.rules!.push(buildCssLoader(true));
 
-  config.plugins?.push(
+  config!.plugins!.push(
     new DefinePlugin({
-      __IS_DEV__: true
+      __IS_DEV__: true,
+      __API_URL__: "http://localhost:8000/"
     })
   );
 

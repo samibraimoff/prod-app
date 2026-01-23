@@ -1,7 +1,6 @@
-import { DeepPartial } from "@reduxjs/toolkit"
-import { StateSchema } from "app/providers/store"
+import { StateSchema } from "app/providers/store";
 
-import { getLoginPassword } from "./get-login-password"
+import { getLoginPassword } from "./get-login-password";
 
 
 test("getLoginPassword", () => {
@@ -9,6 +8,6 @@ test("getLoginPassword", () => {
     loginForm: {
       password: "123"
     }
-  } 
-  expect(getLoginPassword(state as StateSchema)).toBe("123")
-})
+  };
+  expect(getLoginPassword(state as StateSchema)).toBe("123");
+});

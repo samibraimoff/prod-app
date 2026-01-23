@@ -1,3 +1,9 @@
 {
-  "profile": "Profile page"
+  "profile": "Profile page",
+  "errorMessage": "Profile can not be loaded",
+  "isLoading": "Loading user profile",
+  "editProfile": "Edit profile",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "saveProfile": "Save profile"
 }

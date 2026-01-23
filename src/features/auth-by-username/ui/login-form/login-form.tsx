@@ -60,7 +60,7 @@ const LoginForm = (props: LoginFormProps) => {
       e.preventDefault();
       const result = await dispatch(loginByUsername({ username, password }));
       if (result.meta.requestStatus === "fulfilled") {
-        onSuccess();
+        onSuccess?.();
       }
     },
     [onSuccess, dispatch, username, password]

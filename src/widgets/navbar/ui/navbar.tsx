@@ -28,7 +28,7 @@ export const Navbar = memo((props: NavbarProps) => {
     setIsOpen(true);
   }, []);
 
-  const onLougout = useCallback(() => {
+  const onLogout = useCallback(() => {
     dispatch(userActions.logout());
   }, [dispatch]);
 
@@ -40,7 +40,7 @@ export const Navbar = memo((props: NavbarProps) => {
       >
         <Button
           theme={ButtonTheme.BACKGROUND_INVERTED}
-          onClick={onLougout}
+          onClick={onLogout}
           className={styles.links}
         >
           {t("navbar.logout")}

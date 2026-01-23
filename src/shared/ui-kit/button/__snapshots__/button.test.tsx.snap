@@ -2,7 +2,7 @@
 
 exports[`Button should have class 1`] = `
 <button
-  class="button clear undefined"
+  class="button clear size_m"
   type="submit"
 >
   Test
@@ -11,7 +11,7 @@ exports[`Button should have class 1`] = `
 
 exports[`Button should render Button 1`] = `
 <button
-  class="button undefined undefined"
+  class="button primary size_m"
   type="submit"
 >
   Test

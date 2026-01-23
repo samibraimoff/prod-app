@@ -19,7 +19,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = (props) => {
 
   const defaultValues = useMemo(
     () => ({ theme: theme, setTheme: setTheme }),
-    [theme]
+    [theme],
   );
 
   return (

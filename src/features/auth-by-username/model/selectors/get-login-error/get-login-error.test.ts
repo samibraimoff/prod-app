@@ -1,7 +1,6 @@
-import { DeepPartial } from "@reduxjs/toolkit"
-import { StateSchema } from "app/providers/store"
+import { StateSchema } from "app/providers/store";
 
-import { getLoginError } from "./get-login-error"
+import { getLoginError } from "./get-login-error";
 
 
 test("getLoginError", () => {
@@ -9,6 +8,6 @@ test("getLoginError", () => {
     loginForm: {
       error: "Error"
     }
-  } 
-  expect(getLoginError(state as StateSchema)).toBe("Error")
-})
+  };
+  expect(getLoginError(state as StateSchema)).toBe("Error");
+});

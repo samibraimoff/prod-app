@@ -23,7 +23,8 @@ export const buildPlugins = (
       chunkFilename: "css/[name].[contenthash].css"
     }),
     new DefinePlugin({
-      __IS_DEV__: JSON.stringify(options.isDev)
+      __IS_DEV__: JSON.stringify(options.isDev),
+      __API_URL__: JSON.stringify(options.apiUrl)
     })
   ];
 

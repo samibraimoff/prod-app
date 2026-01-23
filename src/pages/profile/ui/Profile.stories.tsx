@@ -10,15 +10,11 @@ export default {
   component: Profile,
   tags: ["autodocs"],
   argTypes: {
-    backgroundColor: { control: "color" }
-  }
+    backgroundColor: { control: "color" },
+  },
 } as ComponentMeta<typeof Profile>;
 
-const Template: ComponentStory<typeof Profile> = (args) => (
-  // eslint-disable-next-line react/jsx-props-no-spreading, @typescript-eslint/ban-ts-comment
-  // @ts-ignore - Storybook args are always an object
-  <Profile {...args} />
-);
+const Template: ComponentStory<typeof Profile> = () => <Profile />;
 
 export const ProfileLight = Template.bind({});
 ProfileLight.args = {};

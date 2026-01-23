@@ -1,72 +1,76 @@
 .button {
-    cursor: pointer;
-    padding: 8px 16px;
+  cursor: pointer;
+  padding: 8px 16px;
 }
 
 .primary {
-    border: 1px solid var(--primary-color);
-    color: var(--inverted-primary-color);
-    background-color: var(--inverted-bg-color);
+  border: 1px solid var(--primary-color);
+  color: var(--inverted-primary-color);
+  background-color: var(--inverted-bg-color);
 }
 
 .clear {
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-    color: var(--primary-color);
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--primary-color);
 }
 
 .outline {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    background: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: none;
 }
 
 .background {
-    background: var(--inverted-bg-color);
-    color: var(--inverted-primary-color);
-    border: none;
+  background: var(--inverted-bg-color);
+  color: var(--inverted-primary-color);
+  border: none;
 }
 
 .backgroundInverted {
-    background: var(--bg-color);
-    color: var(--primary-color);
-    border: none;
+  background: var(--bg-color);
+  color: var(--primary-color);
+  border: none;
 }
 
 .square {
-    padding: 0;
+  padding: 0;
 }
 
 .square.size_m {
-    width: var(--font-height-medium);
-    height: var(--font-height-medium);
+  width: var(--font-height-medium);
+  height: var(--font-height-medium);
 }
 
 .square.size_l {
-    width: var(--font-height-large);
-    height: var(--font-height-large);
+  width: var(--font-height-large);
+  height: var(--font-height-large);
 }
 
 .square.size_xl {
-    width: var(--font-height-x-large);
-    height: var(--font-height-x-large);
+  width: var(--font-height-x-large);
+  height: var(--font-height-x-large);
+}
+
+.size_s {
+  font-size: var(--font-size-small);
 }
 
 .size_m {
-    font-size: var(--font-size-medium);
+  font-size: var(--font-size-medium);
 }
 
 .size_l {
-    font-size: var(--font-size-large);
+  font-size: var(--font-size-large);
 }
 
 .size_xl {
-    font-size: var(--font-size-x-large);
+  font-size: var(--font-size-x-large);
 }
 
 .disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
 }

@@ -25,11 +25,11 @@ describe("Navbar", () => {
 
   test.skip("should render modal when button is clicked", async () => {
     const user = userEvent.setup();
-    const { getByRole, findByTestId, queryByTestId } = componentRender(
+    const { getByRole, findByTestId } = componentRender(
       <Navbar />
     );
     const buttonElement = getByRole("button", {
-      name: /navbar.signIn/i,
+      name: /navbar.signIn/i
     });
     expect(document.getElementById("modal-root")).toBeInTheDocument();
     screen.debug(buttonElement);
